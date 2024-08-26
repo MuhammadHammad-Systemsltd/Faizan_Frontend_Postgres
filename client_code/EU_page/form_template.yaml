@@ -1,7 +1,7 @@
 is_package: true
 container:
   type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html'}
+  properties: {tooltip: '', background: '', foreground: '', border: '', visible: true, role: null, html: '@theme:standard-page.html'}
 components:
 - type: FlowPanel
   properties: {}
@@ -22,7 +22,13 @@ components:
   properties: {role: headline, text: EU_Survey}
   type: Label
   layout_properties: {slot: title}
-- name: flow_panel_1
+- name: linear_panel_1
   properties: {}
-  type: FlowPanel
+  type: LinearPanel
   layout_properties: {slot: default}
+  components:
+  - name: column_panel_1
+    properties: {role: card, col_widths: '{}', spacing_above: large, background: '', wrap_on: never, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: '', spacing: null}
+    type: ColumnPanel
+    components: []
+    layout_properties: {}
