@@ -31,4 +31,7 @@ components:
     properties: {role: card, col_widths: '{}', spacing_above: large, background: '', wrap_on: never, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: '', spacing: null}
     type: ColumnPanel
     components: []
-    layout_properties: {}
+    event_bindings: {show: column_panel_1_show}
+  - name: card_1
+    properties: {role: card, col_spacing: huge}
+    type: ColumnPanel

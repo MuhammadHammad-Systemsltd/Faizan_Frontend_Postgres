@@ -22,3 +22,7 @@ class EU_page(EU_pageTemplate):
     self.content_panel.add_component(Introduction(), full_width_row=True)
     self.back_link.visible = False
     self.report_link.visible = True
+
+  def column_panel_1_show(self, **event_args):
+    """This method is called when the column panel is shown on the screen"""
+    pass
