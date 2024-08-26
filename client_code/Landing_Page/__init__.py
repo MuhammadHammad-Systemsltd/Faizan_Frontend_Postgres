@@ -15,15 +15,18 @@ class Landing_Page(Landing_PageTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.content_panel.add_component(Introduction(), full_width_row=True)
     anvil.server.call('get_total_responses')
     
     if anvil.server.call('check_admin'):
       self.report_link.visible = True
       self.login_link.visible = False
       self.logout_link.visible = True
+  
+  def GetStarted_button_click(self, **event_args):
+    """This method is called when the Button is Pressed"""
+    self.content_panel.clear()
+    self.content_panel.add_component(Introduction(), full_width_row=True)
     
-
   def report_link_click(self, **event_args):
     """This method is called when the link is clicked"""
     if anvil.server.call('check_admin'):

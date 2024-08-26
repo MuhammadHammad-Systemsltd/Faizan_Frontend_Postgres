@@ -36,7 +36,3 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
-- name: headline_1
-  properties: {role: headline, text: Welcome}
-  type: Label
-  layout_properties: {slot: title}
