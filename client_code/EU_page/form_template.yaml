@@ -22,16 +22,20 @@ components:
   properties: {role: headline, text: EU_Survey}
   type: Label
   layout_properties: {slot: title}
-- name: linear_panel_1
-  properties: {}
-  type: LinearPanel
+- type: ColumnPanel
+  properties: {role: card, col_widths: '{}'}
+  name: card_1
   layout_properties: {slot: default}
   components:
-  - name: column_panel_1
-    properties: {role: card, col_widths: '{}', spacing_above: large, background: '', wrap_on: never, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: '', spacing: null}
-    type: ColumnPanel
-    components: []
-    event_bindings: {show: column_panel_1_show}
-  - name: card_1
-    properties: {role: card, col_spacing: huge}
-    type: ColumnPanel
+  - type: ColumnPanel
+    properties: {role: card}
+    name: card_2
+    layout_properties: {grid_position: 'HWDRVX,TFCXZP'}
+  - type: ColumnPanel
+    properties: {role: card}
+    name: card_3
+    layout_properties: {grid_position: 'HWDRVX,WBAQQB'}
+  - type: ColumnPanel
+    properties: {role: card}
+    name: card_4
+    layout_properties: {grid_position: 'AXGCYP,PUTAXY'}
