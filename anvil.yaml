@@ -92,9 +92,9 @@ db_schema:
     - name: num_responses
       admin_ui: {width: 200}
       type: number
-startup: {type: form, module: Form1}
+startup: {type: form, module: Landing_Page}
 name: Webform Template
-startup_form: Form1
+startup_form: null
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">'}
 correct_dependency_ids: {OHWC42ZUNUZNJNLA: OHWC42ZUNUZNJNLA}
 renamed: true

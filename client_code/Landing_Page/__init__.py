@@ -1,4 +1,4 @@
-from ._anvil_designer import Form1Template
+from ._anvil_designer import Landing_PageTemplate
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
@@ -9,13 +9,13 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 from ..Survey import Survey
 from ..Report import Report
+from .Introduction import Introduction
 
-
-class Form1(Form1Template):
+class Landing_Page(Landing_PageTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.content_panel.add_component(Survey(), full_width_row=True)
+    self.content_panel.add_component(Introduction(), full_width_row=True)
     anvil.server.call('get_total_responses')
     
     if anvil.server.call('check_admin'):
