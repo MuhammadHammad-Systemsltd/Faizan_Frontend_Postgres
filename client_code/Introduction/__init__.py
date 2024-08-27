@@ -8,6 +8,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from ..EU_page import EU_page
+from ..UK_Page import UK_Page
 
 
 class Introduction(IntroductionTemplate):
@@ -31,8 +32,9 @@ class Introduction(IntroductionTemplate):
     region = self.Region_dropdown.selected_value
     text = self.Username_text.text
     project = self.Project_text.text
-    if region == "Europe":
-      open_form(EU_page())
+    
+    if region == "UK" or "Canada" or "USA" or "Europe":
+      open_form(UK_Page())
     else:
       print("None")
       
