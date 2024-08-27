@@ -26,3 +26,7 @@ class EU_page(EU_pageTemplate):
   def column_panel_1_show(self, **event_args):
     """This method is called when the column panel is shown on the screen"""
     pass
+
+  def link_1_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    pass
