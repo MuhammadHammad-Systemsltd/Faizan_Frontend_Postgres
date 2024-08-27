@@ -24,11 +24,11 @@ components:
       name: spacer_1
       layout_properties: {grid_position: 'NHXMYV,SDXJHH KEOHOZ,BQUSKO'}
     - type: Label
-      properties: {role: headline, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: Raleway, icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 32, tooltip: '', text: Let us know more about your experience}
+      properties: {role: headline, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: Raleway, icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 32, tooltip: '', text: We Value your Feedback}
       name: label_2
       layout_properties: {grid_position: 'NHXMYV,SDXJHH RQSIKH,ZITBWG'}
     - type: Label
-      properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:White', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: Please select the most likely answer}
+      properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:White', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: Please help us out by filling in the following survey.}
       name: label_3
       layout_properties: {grid_position: 'NHXMYV,SDXJHH PMNBXG,XNXNEV'}
     - type: Image
@@ -49,7 +49,7 @@ components:
     layout_properties: {grid_position: 'QPHRXA,KTSCKX'}
     components:
     - type: Label
-      properties: {role: subheading, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Tell us a bit about you.}
+      properties: {role: subheading, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Did you observe any Data Leaks?'}
       name: label_5
       layout_properties: {grid_position: 'WEIVFY,GBJPZF'}
     - type: Spacer
@@ -57,7 +57,7 @@ components:
       name: spacer_7
       layout_properties: {grid_position: 'CIKJJP,ABRJJQ'}
     - type: Label
-      properties: {role: input-prompt, bold: false, align: right, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Gray 900', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: 'Age:'}
+      properties: {role: input-prompt, bold: false, align: right, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Gray 900', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: Answer}
       name: label_6
       layout_properties: {grid_position: 'CIKJJP,PAKZMK'}
     - type: DropDown
@@ -72,7 +72,7 @@ components:
         underline: false
         font: ''
         foreground: ''
-        items: [under 18, 18 - 24, 25 - 34, 35 - 44, 45 - 54, 55 - 64, over 65]
+        items: ['Yes', 'No', I did not check]
         spacing_below: small
         visible: true
         border: ''
@@ -92,7 +92,7 @@ components:
     layout_properties: {grid_position: 'CVHDSX,FCKBDB'}
     components:
     - type: Label
-      properties: {role: subheading, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'On average, how often would you say you use this software?'}
+      properties: {role: subheading, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'On average, how often would you say you use our services?'}
       name: label_7
       layout_properties: {grid_position: 'JHPBLZ,PWPDOE'}
     - type: Spacer
@@ -156,7 +156,7 @@ components:
     - type: form:OHWC42ZUNUZNJNLA:Slider
       properties: {level: 1, slider_min: 1, slider_max: 7, step: 1}
       name: slider_1
-      layout_properties: {grid_position: 'DWFUWH,ISZHEO'}
+      layout_properties: {grid_position: 'HVMTJF,BGJPSZ'}
       event_bindings: {change: slider_1_change}
     - type: Label
       properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Gray 900', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: ''}
@@ -168,7 +168,7 @@ components:
     layout_properties: {grid_position: 'GJMESQ,DHLLOR'}
     components:
     - type: Label
-      properties: {role: subheading, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Do you have any additional comments?'}
+      properties: {role: subheading, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Do you have any additional comments or Feedback?'}
       name: label_9
       layout_properties: {grid_position: 'AXGMOO,XOUXXR'}
     - type: TextArea
