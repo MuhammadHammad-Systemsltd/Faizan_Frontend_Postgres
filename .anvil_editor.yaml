@@ -1,4 +1,7 @@
 unique_ids:
+  assets:
+    standard-page.html: WWBACPS33RBNCCXA2PK6WRJAU7Y52FG6
+    theme.css: S7ZOHWFLVB2C34SGSIAEGGCDOE7O7PPA
   forms:
     EU_page: '1724683464968924631404065.0345'
     Introduction: '1724673668086293218744565.6389'
@@ -8,9 +11,6 @@ unique_ids:
     US_Page: '1724745997093430136510099.88776'
     success: '1724747218990716840652287.7031'
   modules: {}
+  scripts: {}
   server_modules:
     ServerModule1: 34MDHM63KE5HM23ESOJVR2HAXJXBUFTH
-  assets:
-    standard-page.html: WWBACPS33RBNCCXA2PK6WRJAU7Y52FG6
-    theme.css: S7ZOHWFLVB2C34SGSIAEGGCDOE7O7PPA
-  scripts: {}

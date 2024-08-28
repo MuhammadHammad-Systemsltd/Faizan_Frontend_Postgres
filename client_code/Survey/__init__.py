@@ -25,7 +25,7 @@ class Survey(SurveyTemplate):
     self.slider_label.text = self.slider_levels[self.slider_1.level]
 
 
-  def slider_1_change(self, level, **event_args):
+  def Reporting_slider_change(self, level, **event_args):
     """This method is called when the slider is moved"""
     self.slider_label.text = self.slider_levels[self.slider_1.level]
 
