@@ -1,21 +1,17 @@
 components:
 - components:
   - components:
-    - layout_properties: {grid_position: 'VZSYTU,HJFXJX'}
-      name: spacer_5
-      properties: {height: 32}
-      type: Spacer
     - layout_properties: {grid_position: 'NHXMYV,SDXJHH KEOHOZ,BQUSKO'}
       name: spacer_1
       properties: {height: 73}
       type: Spacer
     - layout_properties: {grid_position: 'NHXMYV,SDXJHH RQSIKH,ZITBWG'}
       name: label_2
-      properties: {align: center, background: '', bold: false, border: '', font: Raleway, font_size: 32, foreground: '', icon: '', icon_align: left, italic: false, role: headline, spacing_above: small, spacing_below: small, text: Let us know more about your experience, tooltip: '', underline: false, visible: true}
+      properties: {align: center, background: '', bold: true, border: '', font: Raleway, font_size: 32, foreground: '', icon: '', icon_align: left, italic: false, role: headline, spacing_above: small, spacing_below: small, text: Let us Configure YOUR SYSTEM according to YOUR NEEDS!, tooltip: '', underline: false, visible: true}
       type: Label
     - layout_properties: {grid_position: 'NHXMYV,SDXJHH PMNBXG,XNXNEV'}
       name: label_3
-      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 18, foreground: 'theme:White', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Please select the most likely answer, tooltip: '', underline: false, visible: true}
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 18, foreground: 'theme:White', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: All fields are required*, tooltip: '', underline: false, visible: true}
       type: Label
     - layout_properties: {grid_position: 'NHXMYV,YGCHTC'}
       name: image_1
@@ -277,7 +273,7 @@ components:
   - event_bindings: {click: submit_button_click}
     layout_properties: {grid_position: 'DXQVFR,DDEHGB'}
     name: submit_button
-    properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: 'fa:arrow-circle-right', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Submit, tooltip: '', underline: false, visible: true}
+    properties: {align: center, background: 'theme:Primary 500', bold: true, border: '', enabled: true, font: '', font_size: 18, foreground: 'theme:White', icon: 'fa:arrow-circle-right', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Submit, tooltip: '', underline: false, visible: true}
     type: Button
   - layout_properties: {grid_position: 'PEVZOB,HTXBYT'}
     name: spacer_3
@@ -285,7 +281,7 @@ components:
     type: Spacer
   - layout_properties: {grid_position: 'SNMNRK,ZPBWDM'}
     name: label_4
-    properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: 'theme:Gray 900', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Thank you for participating. Your feedback will be used to improve our products and services., tooltip: '', underline: false, visible: true}
+    properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: 'theme:Gray 900', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '@ Systems LTD. All rights reserved.', tooltip: '', underline: false, visible: true}
     type: Label
   layout_properties:
     col_widths: {}

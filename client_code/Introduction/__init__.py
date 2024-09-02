@@ -16,26 +16,17 @@ class Introduction(IntroductionTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run when the form opens.
-
-  def ProjectModel_dropdown_change(self, **event_args):
-    """This method is called when an item is selected"""
-    pass
-
-  def Clientname_text_pressed_enter(self, **event_args):
-    """This method is called when the user presses Enter in this text box"""
-    
-    pass
-
   def IntroNext_btn_click(self, **event_args):
     """This method is called when the button is clicked"""
     model = self.ProjectModel_dropdown.selected_value
     client = self.Clientname_text.text
     project = self.ProjectName_text.text
     
-    if model is not None:
+    if model and client and project:
+      alert("Welcome " + client)
       open_form(Survey())
     else:
-      print("Model Value Found = None")
+      alert("Please fill out all the fields!")
       
     print(f"This are the values Project Model: {model}\nClient Name: {client}\nProject Name {project}")
     

@@ -53,23 +53,18 @@ class Survey(SurveyTemplate):
     # Additional Comments
     feedback = self.feedback_area.text
     
-    if age and frequency and methods and rating:
-      anvil.server.call('add_responses', age, frequency, methods, rating, comments)
-      alert("Thank you for submitting feedback!")
+    if coverage and location and project_client and support_lvl:
+      # anvil.server.call('add_responses', age, frequency, methods, rating, comments)
+      alert("Thank you for submitting the form!\nWe will get back to you shortly!")
       get_open_form().content_panel.clear()
       get_open_form().content_panel.add_component(Success(), full_width_row=True)
-
-    
     else:
       alert("Please fill out required fields")
 
-  def coverage_dropdown_change(self, **event_args):
-    """This method is called when an item is selected"""
+  def submit_button_hide(self, **event_args):
+    """This method is called when the Button is removed from the screen"""
     pass
 
-  def projecttick_RY_clicked(self, **event_args):
-    """This method is called when this radio button is selected"""
-    pass
       
       
     
