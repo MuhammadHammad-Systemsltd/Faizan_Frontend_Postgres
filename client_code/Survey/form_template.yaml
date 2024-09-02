@@ -38,7 +38,8 @@ components:
       name: label_5
       properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Project Details:', tooltip: '', underline: false, visible: true}
       type: Label
-    - layout_properties: {grid_position: 'CIKJJP,FIASEO'}
+    - event_bindings: {change: coverage_dropdown_change}
+      layout_properties: {grid_position: 'CIKJJP,FIASEO'}
       name: coverage_dropdown
       properties:
         align: full
@@ -114,7 +115,7 @@ components:
       properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: Technical Details, tooltip: '', underline: false, visible: true}
       type: Label
     - layout_properties: {grid_position: 'CIKJJP,YLXRWP'}
-      name: age_dropdown_copy
+      name: support_level_dropdown
       properties:
         align: full
         background: ''
@@ -137,14 +138,14 @@ components:
       type: DropDown
     - data_bindings: []
       layout_properties: {grid_position: 'CIKJJP,LGIEHK'}
-      name: drop_down_1
+      name: project_tech_dropdown
       properties:
         include_placeholder: true
         items: [ERP, Infrastructure]
         placeholder: Project Technology
       type: DropDown
     - layout_properties: {grid_position: 'CIKJJP,TIMQHF'}
-      name: drop_down_2
+      name: project_env_dropdown
       properties:
         include_placeholder: true
         items: [Cloud, On-Premise, Hybrid]
@@ -176,7 +177,8 @@ components:
       name: label_7_copy
       properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: Project Ticketing tool, tooltip: '', underline: false, visible: true}
       type: Label
-    - layout_properties: {grid_position: 'GINEWQ,QBGTJJ'}
+    - event_bindings: {clicked: projecttick_RY_clicked}
+      layout_properties: {grid_position: 'GINEWQ,QBGTJJ'}
       name: projecttick_RY
       properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:Gray 900', group_name: radioGroup2, italic: false, role: null, selected: false, spacing_above: small, spacing_below: small, text: 'Yes', tooltip: '', underline: false, value: 'Yes', visible: true}
       type: RadioButton
@@ -189,39 +191,42 @@ components:
     properties: {background: '', border: '', col_spacing: huge, col_widths: '{}', foreground: '', role: question-box, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
     type: ColumnPanel
   - components:
+    - layout_properties: {grid_position: 'BUUQFX,IIKFMG'}
+      name: label_8
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: Project Reporting, tooltip: '', underline: false, visible: true}
+      type: Label
+    - data_bindings: []
+      event_bindings: {change: Reporting_slider_change}
+      layout_properties: {full_width_row: false, grid_position: 'DWFUWH,ISZHEO'}
+      name: Reporting_slider
+      properties: {level: 1, slider_max: 4, slider_min: 1, step: 1}
+      type: form:OHWC42ZUNUZNJNLA:Slider
+    - layout_properties: {grid_position: 'KQJAHE,THYJWU'}
+      name: slider_label
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 16, foreground: 'theme:Gray 900', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: Label
+    layout_properties: {grid_position: 'FPFMIA,POUVWW'}
+    name: column_panel_4
+    properties: {background: '', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: question-box, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
+    type: ColumnPanel
+  - components:
     - layout_properties: {grid_position: 'WEIVFY,GBJPZF'}
       name: label_5_copy_copy
       properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: Support Requirements, tooltip: '', underline: false, visible: true}
       type: Label
-    - layout_properties: {grid_position: 'CIKJJP,YLXRWP TRAFZW,WGWLTI'}
-      name: reporting_dropdown
-      properties:
-        align: full
-        background: ''
-        bold: false
-        border: ''
-        enabled: true
-        font: ''
-        font_size: null
-        foreground: ''
-        include_placeholder: true
-        italic: false
-        items: ['No', Daily, Weekly, Monthly]
-        placeholder: Project Reporting
-        role: null
-        spacing_above: small
-        spacing_below: small
-        tooltip: ''
-        underline: false
-        visible: true
-      type: DropDown
     - layout_properties: {grid_position: 'CIKJJP,YLXRWP ZVSEYU,LQNDGZ'}
-      name: drop_down_3
-      properties: {include_placeholder: true, placeholder: Project Voice Support}
+      name: voice_sup_dropdown
+      properties:
+        include_placeholder: true
+        items: ['Yes', 'No']
+        placeholder: Project Voice Support
       type: DropDown
     - layout_properties: {grid_position: 'CIKJJP,YLXRWP UCYNTY,PCEWOW'}
-      name: drop_down_6
-      properties: {}
+      name: ticket_count_dropdown
+      properties:
+        include_placeholder: true
+        items: [High, Medium]
+        placeholder: Project Tickets Count
       type: DropDown
     - data_bindings: []
       layout_properties: {grid_position: 'CIKJJP,LGIEHK EJUUWK,WJMMHG'}
@@ -232,79 +237,28 @@ components:
         placeholder: Project SLA
       type: DropDown
     - layout_properties: {grid_position: 'CIKJJP,LGIEHK JMJXOP,WCWMRP'}
-      name: drop_down_4
-      properties: {}
-      type: DropDown
-    - layout_properties: {grid_position: 'CIKJJP,LGIEHK EPGLXG,XABFIS'}
-      name: drop_down_7
-      properties: {}
+      name: sup_medium_dropdown
+      properties:
+        include_placeholder: true
+        items: [Email, Calls, Ticketing Tool]
+        placeholder: Project Support Medium
       type: DropDown
     - layout_properties: {grid_position: 'CIKJJP,TIMQHF WHHTHX,UQGTCN'}
-      name: montl_dropdown
+      name: monitoring_tool_dropdown
       properties:
         include_placeholder: true
         items: ['Yes', 'No']
         placeholder: Project Monitoring tool
       type: DropDown
     - layout_properties: {grid_position: 'CIKJJP,TIMQHF NHJMQX,WSUTXC'}
-      name: drop_down_5
-      properties: {}
-      type: DropDown
-    - layout_properties: {grid_position: 'CIKJJP,TIMQHF PMDOHS,MLUCIK'}
-      name: drop_down_8
-      properties: {}
+      name: number_portals_dropdown
+      properties:
+        include_placeholder: true
+        items: ['Yes', 'No']
+        placeholder: Project Number of portals
       type: DropDown
     layout_properties: {grid_position: 'MNPIBE,CUMRME'}
     name: column_panel_1_copy_copy
-    properties: {background: '', border: '', col_spacing: medium, col_widths: '{"YLXRWP":20,"JWVLAJ":25}', foreground: '', role: question-box, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
-    type: ColumnPanel
-  - components:
-    - layout_properties: {grid_position: 'JWJYDX,DNVMNC'}
-      name: label_1
-      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'How do you normally use the software? (Select all that apply)', tooltip: '', underline: false, visible: true}
-      type: Label
-    - layout_properties: {grid_position: 'HDSHVG,XPHNWY'}
-      name: spacer_11
-      properties: {height: 32}
-      type: Spacer
-    - layout_properties: {grid_position: 'HDSHVG,RNQGOH QXDEEU,YWTKWE'}
-      name: check_box_1
-      properties: {align: left, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: 'theme:Gray 900', italic: false, role: null, spacing_above: small, spacing_below: small, text: Personal Laptop/Desktop, tooltip: '', underline: false, visible: true}
-      type: CheckBox
-    - layout_properties: {grid_position: 'HDSHVG,RNQGOH RTEGRS,ZVCAUH'}
-      name: check_box_2
-      properties: {align: left, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: 'theme:Gray 900', italic: false, role: null, spacing_above: small, spacing_below: small, text: Work Laptop/Desktop, tooltip: '', underline: false, visible: true}
-      type: CheckBox
-    - layout_properties: {grid_position: 'HDSHVG,RNQGOH KMDIBN,QOZZDS'}
-      name: check_box_3
-      properties: {align: left, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: 'theme:Gray 900', italic: false, role: null, spacing_above: small, spacing_below: small, text: Tablet, tooltip: '', underline: false, visible: true}
-      type: CheckBox
-    - layout_properties: {grid_position: 'HDSHVG,RNQGOH ZTKQYE,QADGLS'}
-      name: check_box_4
-      properties: {align: left, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: 'theme:Gray 900', italic: false, role: null, spacing_above: small, spacing_below: small, text: Phone, tooltip: '', underline: false, visible: true}
-      type: CheckBox
-    layout_properties: {grid_position: 'JEZBKB,DYKZCQ'}
-    name: column_panel_3
-    properties: {background: '', border: '', col_spacing: medium, col_widths: '{"XPHNWY":10,"RNQGOH":50}', foreground: '', role: question-box, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
-    type: ColumnPanel
-  - components:
-    - layout_properties: {grid_position: 'BUUQFX,IIKFMG'}
-      name: label_8
-      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: Project Reporting, tooltip: '', underline: false, visible: true}
-      type: Label
-    - data_bindings:
-      - {code: 'self.item[''No'', ''Daily'',''Weekly'',''Monthly'']', property: item, writeback: false}
-      event_bindings: {change: Reporting_slider_change}
-      layout_properties: {full_width_row: false, grid_position: 'DWFUWH,ISZHEO'}
-      name: Reporting_slider
-      properties: {level: 1, slider_max: 4, slider_min: 1, step: 1}
-      type: form:OHWC42ZUNUZNJNLA:Slider
-    - layout_properties: {grid_position: 'KQJAHE,THYJWU'}
-      name: slider_label
-      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 16, foreground: 'theme:Gray 900', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
-      type: Label
-    layout_properties: {grid_position: 'FDIIMP,XJOPUF'}
-    name: column_panel_4
     properties: {background: '', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: question-box, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
     type: ColumnPanel
   - components:
@@ -313,8 +267,8 @@ components:
       properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Do you have any additional comments?', tooltip: '', underline: false, visible: true}
       type: Label
     - layout_properties: {grid_position: 'IWXKQP,QIFPPO'}
-      name: comment_area
-      properties: {align: left, auto_expand: false, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', height: 166, italic: false, placeholder: '', role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      name: feedback_area
+      properties: {align: left, auto_expand: false, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', height: 166, italic: false, placeholder: Add Feedback!, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
       type: TextArea
     layout_properties: {grid_position: 'GJMESQ,DHLLOR'}
     name: column_panel_5

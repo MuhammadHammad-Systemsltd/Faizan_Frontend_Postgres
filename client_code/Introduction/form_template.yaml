@@ -2,24 +2,16 @@ components:
 - components:
   - layout_properties: {grid_position: 'QGMYUL,GBDCJH'}
     name: headline_2
-    properties: {role: headline, text: Please enter your data}
+    properties: {bold: true, role: headline, text: Please enter your data}
     type: Label
   - components:
-    - event_bindings: {pressed_enter: Username_text_pressed_enter}
-      layout_properties: {width: 200, x: 382.35001831129193, y: 132.55001525953412}
-      name: Username_text
-      properties: {placeholder: Client Name}
-      type: TextBox
-    - layout_properties: {width: 200, x: 382.29996948316693, y: 180.5000122077763}
-      name: Project_text
-      properties: {placeholder: Project Name}
-      type: TextBox
     - data_bindings:
       - {code: 'self.item['''']', property: selected_value, writeback: false}
-      event_bindings: {change: Region_dropdown_change}
-      layout_properties: {width: 198.4375, x: 383.94999389722943, y: 234.15000610426068}
-      name: Region_dropdown
+      event_bindings: {change: ProjectModel_dropdown_change}
+      layout_properties: {grid_position: 'AXQHIS,LPNVZC'}
+      name: ProjectModel_dropdown
       properties:
+        align: center
         background: ''
         bold: false
         border: ''
@@ -30,15 +22,24 @@ components:
         spacing_above: large
         spacing_below: large
       type: DropDown
-    - event_bindings: {click: next_btn_click}
-      layout_properties: {width: 200, x: 376.25004272535443, y: 295.6500061042607}
-      name: next_btn
-      properties: {background: 'theme:Primary 500', foreground: 'theme:Primary 700', text: Next}
+    - event_bindings: {pressed_enter: Clientname_text_pressed_enter}
+      layout_properties: {grid_position: 'NMMGOY,GCMTNV'}
+      name: Clientname_text
+      properties: {align: left, placeholder: Client Name}
+      type: TextBox
+    - layout_properties: {grid_position: ''}
+      name: ProjectName_text
+      properties: {align: left, placeholder: Project Name}
+      type: TextBox
+    - event_bindings: {click: IntroNext_btn_click}
+      layout_properties: {grid_position: 'XOVEVJ,CABJKG'}
+      name: IntroNext_btn
+      properties: {align: right, background: 'theme:Primary 500', foreground: 'theme:Primary 700', text: Next}
       type: Button
-    layout_properties: {grid_position: 'PXKRWQ,WFYMOU'}
-    name: xy_panel_1
-    properties: {height: 382.6000061035156}
-    type: XYPanel
+    layout_properties: {grid_position: 'TKJBSH,VLVXIC'}
+    name: card_1
+    properties: {role: card}
+    type: ColumnPanel
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
