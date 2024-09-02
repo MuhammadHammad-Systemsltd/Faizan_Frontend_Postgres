@@ -52,6 +52,7 @@ class Survey(SurveyTemplate):
     
     # Additional Comments
     feedback = self.feedback_area.text
+    print(coverage)
     
     if coverage and location and project_client and support_lvl:
       # anvil.server.call('add_responses', age, frequency, methods, rating, comments)
