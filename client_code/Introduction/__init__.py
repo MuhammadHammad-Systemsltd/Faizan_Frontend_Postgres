@@ -14,14 +14,17 @@ class Introduction(IntroductionTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
+    self.User_details = []
     # Any code you write here will run when the form opens.
+  def return_userdetails(self):
+    return self.User_details
   def IntroNext_btn_click(self, **event_args):
     """This method is called when the button is clicked"""
     model = self.ProjectModel_dropdown.selected_value
     client = self.Clientname_text.text
     project = self.ProjectName_text.text
-    
+    self.User_details = [model, client, project]
+    print("Here is the data from the self ", self.User_details)
     if model and client and project:
       alert("Welcome " + client)
       open_form(Survey())

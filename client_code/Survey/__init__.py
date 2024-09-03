@@ -29,6 +29,7 @@ class Survey(SurveyTemplate):
     self.slider_label.text = self.slider_levels[self.Reporting_slider.level]
 
   def submit_button_click(self, **event_args):
+    from ..Introduction import Introduction
     """This method is called when the button is clicked"""
     ## Page 1 or Section 1 Project Details
     coverage = self.coverage_dropdown.selected_value
@@ -54,9 +55,10 @@ class Survey(SurveyTemplate):
     # Additional Comments
     feedback = self.feedback_area.text
     print(coverage)
+    client_details = Introduction.return_userdetails()
     # Create a random ID for the CLient
     print(random.randint(1, 10000))
-    Values = [coverage, location, project_client,support_lvl, technology, environment,
+    Values = [client_details,coverage, location, project_client,support_lvl, technology, environment,
              existing, ticketing, reporting_lvl, voice_sup, SLA, monitoring_tool,
              ticket_count, medium, no_portals, feedback]
     anvil.server.call('save', Values)
