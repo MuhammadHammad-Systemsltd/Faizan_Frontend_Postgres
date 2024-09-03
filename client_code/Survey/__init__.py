@@ -8,6 +8,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from ..Success import Success
+import random
 
 class Survey(SurveyTemplate):
   def __init__(self, **properties):
@@ -53,6 +54,8 @@ class Survey(SurveyTemplate):
     # Additional Comments
     feedback = self.feedback_area.text
     print(coverage)
+    # Create a random ID for the CLient
+    print(random.randint(1, 10000))
     Values = [coverage, location, project_client,support_lvl, technology, environment,
              existing, ticketing, reporting_lvl, voice_sup, SLA, monitoring_tool,
              ticket_count, medium, no_portals, feedback]
