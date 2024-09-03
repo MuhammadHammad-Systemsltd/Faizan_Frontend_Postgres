@@ -55,7 +55,7 @@ class Survey(SurveyTemplate):
     # Additional Comments
     feedback = self.feedback_area.text
     print(coverage)
-    client_details = Introduction.return_userdetails()
+    client_details = Introduction.return_userdetails(Introduction)
     # Create a random ID for the CLient
     print(random.randint(1, 10000))
     Values = [client_details,coverage, location, project_client,support_lvl, technology, environment,
