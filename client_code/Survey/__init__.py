@@ -53,7 +53,10 @@ class Survey(SurveyTemplate):
     # Additional Comments
     feedback = self.feedback_area.text
     print(coverage)
-    
+    Values = [coverage, location, project_client,support_lvl, technology, environment,
+             existing, ticketing, reporting_lvl, voice_sup, SLA, monitoring_tool,
+             ticket_count, medium, no_portals, feedback]
+    anvil.server.call('save', Values)
     if coverage and location and project_client and support_lvl:
       # anvil.server.call('add_responses', age, frequency, methods, rating, comments)
       alert("Thank you for submitting the form!\nWe will get back to you shortly!")
