@@ -61,9 +61,9 @@ class Survey(SurveyTemplate):
     Values = client_details + [coverage, location, project_client,support_lvl, technology, environment,
              existing, ticketing, reporting_lvl, voice_sup, SLA, monitoring_tool,
              ticket_count, medium, no_portals, feedback]
-    anvil.server.call('save', Values)
     if None not in Values:
       # anvil.server.call('add_responses', age, frequency, methods, rating, comments)
+      anvil.server.call('save', Values)
       alert("Thank you for submitting the form!\nWe will get back to you shortly!")
       get_open_form().content_panel.clear()
       get_open_form().content_panel.add_component(Success(), full_width_row=True)
