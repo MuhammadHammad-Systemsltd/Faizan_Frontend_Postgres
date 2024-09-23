@@ -5,23 +5,32 @@ components:
     properties: {bold: true, role: headline, text: Please enter your data}
     type: Label
   - components:
-    - data_bindings:
-      - {code: 'self.item['''']', property: selected_value, writeback: false}
-      event_bindings: {change: ProjectModel_dropdown_change}
-      layout_properties: {grid_position: 'AXQHIS,LPNVZC'}
-      name: ProjectModel_dropdown
-      properties:
-        align: center
-        background: ''
-        bold: false
-        border: ''
-        include_placeholder: true
-        items: [Shared, Dedicated]
-        placeholder: Project Model
-        role: null
-        spacing_above: large
-        spacing_below: large
-      type: DropDown
+    - components:
+      - layout_properties: {grid_position: 'OADGYA,WNGNYT'}
+        name: label_1
+        properties: {align: right, font_size: 18, spacing_above: large, spacing_below: large, text: Project Model}
+        type: Label
+      - data_bindings:
+        - {code: 'self.item['''']', property: selected_value, writeback: false}
+        event_bindings: {change: ProjectModel_dropdown_change}
+        layout_properties: {grid_position: 'OADGYA,TFBKCJ'}
+        name: ProjectModel_dropdown
+        properties:
+          align: left
+          background: ''
+          bold: false
+          border: ''
+          include_placeholder: false
+          items: [Dedicated, Shared]
+          placeholder: Project Model
+          role: null
+          spacing_above: large
+          spacing_below: large
+        type: DropDown
+      layout_properties: {grid_position: 'VFMLMN,ZHYKEJ'}
+      name: card_2
+      properties: {col_widths: '{"WNGNYT":30,"TFBKCJ":30}', role: card}
+      type: ColumnPanel
     - event_bindings: {pressed_enter: Clientname_text_pressed_enter}
       layout_properties: {grid_position: 'NMMGOY,GCMTNV'}
       name: Clientname_text

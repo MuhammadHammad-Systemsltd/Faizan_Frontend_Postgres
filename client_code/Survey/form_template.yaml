@@ -34,6 +34,11 @@ components:
       name: label_5
       properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Project Details:', tooltip: '', underline: false, visible: true}
       type: Label
+    - components: []
+      layout_properties: {grid_position: 'CIKJJP,JMJQPK'}
+      name: rich_text_1
+      properties: {align: center, background: '', content: Project Coverage, font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
+      type: RichText
     - event_bindings: {change: coverage_dropdown_change}
       layout_properties: {grid_position: 'CIKJJP,FIASEO'}
       name: coverage_dropdown
@@ -46,7 +51,7 @@ components:
         font: ''
         font_size: null
         foreground: ''
-        include_placeholder: true
+        include_placeholder: false
         italic: false
         items: [24/7, 16/5, 8/5]
         placeholder: Project Coverage
@@ -57,6 +62,10 @@ components:
         underline: false
         visible: true
       type: DropDown
+    - layout_properties: {grid_position: 'CIKJJP,PKLRLE'}
+      name: rich_text_1_copy
+      properties: {align: center, background: '', content: Project Location, font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
+      type: RichText
     - layout_properties: {grid_position: 'CIKJJP,MSGTHX'}
       name: location_dropdown
       properties:
@@ -68,7 +77,7 @@ components:
         font: ''
         font_size: null
         foreground: ''
-        include_placeholder: true
+        include_placeholder: false
         italic: false
         items: [Offshore, Onsite]
         placeholder: Project Location
@@ -79,6 +88,10 @@ components:
         underline: false
         visible: true
       type: DropDown
+    - layout_properties: {grid_position: 'CIKJJP,LLBMTZ'}
+      name: rich_text_1_copy_2
+      properties: {align: center, background: '', content: Project Client, font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
+      type: RichText
     - layout_properties: {grid_position: 'CIKJJP,QPSAQV'}
       name: client_dropdown
       properties:
@@ -90,7 +103,7 @@ components:
         font: ''
         font_size: null
         foreground: ''
-        include_placeholder: true
+        include_placeholder: false
         italic: false
         items: [Pakistan, US, Germany, Middle east]
         placeholder: Project Client
