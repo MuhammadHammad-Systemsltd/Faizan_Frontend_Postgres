@@ -29,4 +29,19 @@ class Introduction(IntroductionTemplate):
       alert("Please fill out all the fields!")
       
     print(f"This are the values Project Model: {model}\nClient Name: {client}\nProject Name {project}")
+
+  def ProjectName_text_pressed_enter(self, **event_args):
+    global User_details
+    """This method is called when the button is clicked"""
+    model = self.ProjectModel_dropdown.selected_value
+    client = self.Clientname_text.text
+    project = self.ProjectName_text.text
+    if model and client and project:
+      alert("Welcome " + client)
+      open_form(Survey())
+      User_details = [model, client, project]
+    else:
+      alert("Please fill out all the fields!")
+      
+    print(f"This are the values Project Model: {model}\nClient Name: {client}\nProject Name {project}")
     

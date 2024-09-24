@@ -21,12 +21,12 @@ class Survey(SurveyTemplate):
                           4: 'Monthly'}
     #set the slider to neutral initially
     self.Reporting_slider.level = 4
-    self.slider_label.text = self.slider_levels[self.Reporting_slider.level]
+    # self.slider_label.text = self.slider_levels[self.Reporting_slider.level]
 
 
   def Reporting_slider_change(self, level, **event_args):
     """This method is called when the slider is moved"""
-    self.slider_label.text = self.slider_levels[self.Reporting_slider.level]
+    # self.slider_label.text = self.slider_levels[self.Reporting_slider.level]
 
   def submit_button_click(self, **event_args):
     from ..Introduction import User_details
