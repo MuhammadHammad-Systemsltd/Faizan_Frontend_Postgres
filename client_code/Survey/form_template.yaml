@@ -228,15 +228,17 @@ components:
       name: rich_text_3
       properties: {align: center, content: None, enable_slots: false, foreground: 'theme:Black', format: plain_text}
       type: RichText
+    - layout_properties: {grid_position: 'HWSJAL,FUTBPN'}
+      name: rich_text_6
+      properties: {content: Monthly, foreground: 'theme:Black'}
+      type: RichText
+    - components: []
+      layout_properties: {grid_position: 'HWSJAL,JPURNC'}
+      name: rich_text_5
+      properties: {content: Weekly, foreground: 'theme:Black'}
+      type: RichText
     - components:
-      - components:
-        - components:
-          - name: rich_text_6
-            properties: {content: Monthly, foreground: 'theme:Black'}
-            type: RichText
-          name: rich_text_5
-          properties: {content: Weekly, foreground: 'theme:Black'}
-          type: RichText
+      - components: []
         name: rich_text_4
         properties: {content: Daily, foreground: 'theme:Black'}
         type: RichText
