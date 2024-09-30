@@ -29,19 +29,6 @@ components:
     name: spacer_2
     properties: {height: 64}
     type: Spacer
-  - components: []
-    layout_properties: {grid_position: 'DDUZJS,CUKSRL'}
-    name: rich_text_1
-    properties: {align: center, background: '', content: Project Coverage, font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
-    type: RichText
-  - layout_properties: {grid_position: 'NNXERR,PIXDEY'}
-    name: data_row_panel_1
-    properties: {}
-    type: DataRowPanel
-  - layout_properties: {grid_position: 'SUQLRX,EDCZPY'}
-    name: repeating_panel_1
-    properties: {item_template: Resuts_Page.ItemTemplate1}
-    type: RepeatingPanel
   - components:
     - layout_properties: {grid_position: 'WEIVFY,GBJPZF'}
       name: label_5
