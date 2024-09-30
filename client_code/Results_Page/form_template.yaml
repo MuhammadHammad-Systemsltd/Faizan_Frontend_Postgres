@@ -220,11 +220,19 @@ components:
     type: Spacer
   - layout_properties: {grid_position: 'BAOYPJ,QORBSW'}
     name: label_9
-    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'FeedBack:', tooltip: '', underline: false, visible: true}
+    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Proposal Text:', tooltip: '', underline: false, visible: true}
     type: Label
   - layout_properties: {grid_position: 'XZXMIL,RAOUJB'}
     name: Feedback
     properties: {foreground: 'theme:Black'}
+    type: Label
+  - layout_properties: {grid_position: 'QQZBTS,EZCIBC'}
+    name: label_9_copy
+    properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Resource Requirements:', tooltip: '', underline: false, visible: true}
+    type: Label
+  - layout_properties: {grid_position: 'FZMBMS,ZQIACF'}
+    name: Label_Display_resourcereq
+    properties: {align: center, foreground: 'theme:Black'}
     type: Label
   - event_bindings: {click: BackButton_click}
     layout_properties: {grid_position: 'CJVCXF,YGVOFD'}

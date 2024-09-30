@@ -24,7 +24,7 @@ class Introduction(IntroductionTemplate):
     if model and client and project:
       alert("Welcome " + client)
       open_form(Survey())
-      User_details = [model, client, project]
+      User_details = [project, client, model]
     else:
       alert("Please fill out all the fields!")
       

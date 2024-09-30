@@ -27,6 +27,11 @@ class Results_Page(Results_PageTemplate):
     self.label_ProjTickCnt.text, self.label_ProjSupMed.text = Values[15], Values[16]
     self.label_ProjnoPortals.text, self.Feedback.text = Values[17], Values[18]
     
+    if int(Values[19]) >= 25:
+        self.Label_Display_resourcereq.text = "Number of resources required for the project are Minimum 4 or Maximum 5"
+    else:
+        self.Label_Display_resourcereq.text = "Number of resources required for the project are Minimum 1 or Maximum 2"
+    
   # self.slider_label.text = self.slider_levels[self.Reporting_slider.level]
 
   def Reporting_slider_change(self, level, **event_args):
@@ -37,8 +42,7 @@ class Results_Page(Results_PageTemplate):
     """This method is called when the button is clicked"""
     print(self.Values)
     if None not in self.Values:
-      # anvil.server.call('add_responses', age, frequency, methods, rating, comments)
-      # anvil.server.call("save", self.Values)
+      anvil.server.call("save", self.Values)
       alert("Thank you for submitting the form!\nWe will get back to you shortly!")
       self.content_panel.clear()
       open_form('Success')
