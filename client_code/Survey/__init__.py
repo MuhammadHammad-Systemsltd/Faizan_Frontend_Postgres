@@ -8,13 +8,14 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from ..Success import Success
+from ..Results_Page import Results_Page
 import random
 
 class Survey(SurveyTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    
+    self.Values = []
     self.slider_levels = {1: 'No',
                           2: 'Daily',
                           3: 'Weekly',
@@ -63,10 +64,9 @@ class Survey(SurveyTemplate):
              ticket_count, medium, no_portals, feedback]
     if None not in Values:
       # anvil.server.call('add_responses', age, frequency, methods, rating, comments)
-      anvil.server.call('save', Values)
       alert("Thank you for submitting the form!\nWe will get back to you shortly!")
       get_open_form().content_panel.clear()
-      get_open_form().content_panel.add_component(Success(), full_width_row=True)
+      get_open_form().content_panel.add_component(Results_Page(), full_width_row=True)
     else:
       alert("Please fill out required fields")
 

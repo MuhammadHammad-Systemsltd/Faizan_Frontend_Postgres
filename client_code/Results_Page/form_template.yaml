@@ -29,189 +29,99 @@ components:
     name: spacer_2
     properties: {height: 64}
     type: Spacer
-  - components:
-    - layout_properties: {grid_position: 'WEIVFY,GBJPZF'}
-      name: label_5
-      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Project Details:', tooltip: '', underline: false, visible: true}
-      type: Label
-    - event_bindings: {change: coverage_dropdown_change}
-      layout_properties: {grid_position: 'CIKJJP,FIASEO'}
-      name: coverage_dropdown
-      properties:
-        align: full
-        background: ''
-        bold: false
-        border: ''
-        enabled: true
-        font: ''
-        font_size: null
-        foreground: ''
-        include_placeholder: false
-        italic: false
-        items: [24/7, 16/5, 8/5]
-        placeholder: Project Coverage
-        role: null
-        spacing_above: small
-        spacing_below: small
-        tooltip: ''
-        underline: false
-        visible: true
-      type: DropDown
-    - layout_properties: {grid_position: 'CIKJJP,PKLRLE'}
-      name: rich_text_1_copy
-      properties: {align: center, background: '', content: Project Location, font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
-      type: RichText
-    - layout_properties: {grid_position: 'CIKJJP,MSGTHX'}
-      name: location_dropdown
-      properties:
-        align: full
-        background: ''
-        bold: false
-        border: ''
-        enabled: true
-        font: ''
-        font_size: null
-        foreground: ''
-        include_placeholder: false
-        italic: false
-        items: [Offshore, Onsite]
-        placeholder: Project Location
-        role: null
-        spacing_above: small
-        spacing_below: small
-        tooltip: ''
-        underline: false
-        visible: true
-      type: DropDown
-    - layout_properties: {grid_position: 'CIKJJP,LLBMTZ'}
-      name: rich_text_1_copy_2
-      properties: {align: center, background: '', content: Project Client, font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
-      type: RichText
-    - layout_properties: {grid_position: 'CIKJJP,QPSAQV'}
-      name: client_dropdown
-      properties:
-        align: full
-        background: ''
-        bold: false
-        border: ''
-        enabled: true
-        font: ''
-        font_size: null
-        foreground: ''
-        include_placeholder: false
-        italic: false
-        items: [Pakistan, US, Germany, Middle east]
-        placeholder: Project Client
-        role: null
-        spacing_above: small
-        spacing_below: small
-        tooltip: ''
-        underline: false
-        visible: true
-      type: DropDown
-    layout_properties: {grid_position: 'HXRSAV,GFEJKM'}
-    name: column_panel_1
-    properties: {background: '', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: question-box, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
-    type: ColumnPanel
-  - components:
-    - layout_properties: {grid_position: 'WEIVFY,GBJPZF'}
-      name: label_5_copy
-      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: Technical Details, tooltip: '', underline: false, visible: true}
-      type: Label
-    - layout_properties: {grid_position: 'CIKJJP,LYABML'}
-      name: rich_text_1_copy_2_copy
-      properties: {align: center, background: '', content: Project Support Level, font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
-      type: RichText
-    - layout_properties: {grid_position: 'CIKJJP,YLXRWP'}
-      name: support_level_dropdown
-      properties:
-        align: full
-        background: ''
-        bold: false
-        border: ''
-        enabled: true
-        font: ''
-        font_size: null
-        foreground: ''
-        include_placeholder: false
-        italic: false
-        items: [L1, L2, L3]
-        placeholder: Project support Level
-        role: null
-        spacing_above: small
-        spacing_below: small
-        tooltip: ''
-        underline: false
-        visible: true
-      type: DropDown
-    - components: []
-      layout_properties: {grid_position: 'CIKJJP,RAKCLV'}
-      name: rich_text_1_copy_2_copy_copy
-      properties: {align: center, background: '', content: Project Technology, font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
-      type: RichText
-    - data_bindings: []
-      layout_properties: {grid_position: 'CIKJJP,LGIEHK'}
-      name: project_tech_dropdown
-      properties:
-        include_placeholder: false
-        items: [ERP, Infrastructure]
-        placeholder: Project Technology
-      type: DropDown
-    - layout_properties: {grid_position: 'CIKJJP,XIVNIN'}
-      name: rich_text_1_copy_2_copy_copy_2
-      properties: {align: center, background: '', content: Project Environment, font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
-      type: RichText
-    - layout_properties: {grid_position: 'CIKJJP,TIMQHF'}
-      name: project_env_dropdown
-      properties:
-        include_placeholder: false
-        items: [Cloud, On-Premise, Hybrid]
-        placeholder: Project Environment
-      type: DropDown
+  - layout_properties: {grid_position: 'BWSYTP,QEKJWD'}
+    name: label_5
+    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Project Details:', tooltip: '', underline: false, visible: true}
+    type: Label
+  - layout_properties: {grid_position: 'CRRUDG,SCSYYZ'}
+    name: rich_text_1_copy
+    properties: {align: left, background: '', content: 'Project Coverage:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
+    type: RichText
+  - layout_properties: {grid_position: 'CRRUDG,XQOJZI'}
+    name: Label_ProjCov
+    properties: {}
+    type: Label
+  - layout_properties: {grid_position: 'LTSOCN,EVWJXY'}
+    name: rich_text_1_copy_copy
+    properties: {align: left, background: '', content: 'Project Location:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
+    type: RichText
+  - layout_properties: {grid_position: 'LTSOCN,AUHUEF'}
+    name: Label_ProjLoc
+    properties: {}
+    type: Label
+  - layout_properties: {grid_position: 'ACCTDT,AZIBRT'}
+    name: rich_text_1_copy_2
+    properties: {align: left, background: '', content: Project Client, font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
+    type: RichText
+  - layout_properties: {grid_position: 'ACCTDT,PZXUOW'}
+    name: Label_ProjClient
+    properties: {}
+    type: Label
+  - layout_properties: {grid_position: 'KEXSAJ,ZMILGA'}
+    name: label_5_copy
+    properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: Technical Details, tooltip: '', underline: false, visible: true}
+    type: Label
+  - layout_properties: {grid_position: 'MMNBYV,FTXIGP'}
+    name: rich_text_1_copy_2_copy
+    properties: {align: left, background: '', content: Project Support Level, font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
+    type: RichText
+  - layout_properties: {grid_position: 'MMNBYV,UTKDTK'}
+    name: Label_SupLvl
+    properties: {}
+    type: Label
+  - components: []
+    layout_properties: {grid_position: 'VLYGAL,SEVHZP'}
+    name: rich_text_1_copy_2_copy_copy
+    properties: {align: left, background: '', content: Project Technology, font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
+    type: RichText
+  - layout_properties: {grid_position: 'VLYGAL,EZHOVH'}
+    name: Label_ProjTech
+    properties: {}
+    type: Label
+  - components: []
+    layout_properties: {grid_position: 'QXMUXZ,YYPXAU'}
+    name: rich_text_1_copy_2_copy_copy_2
+    properties: {align: left, background: '', content: Project Environment, font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
+    type: RichText
+  - layout_properties: {grid_position: 'QXMUXZ,QJLGZS'}
+    name: Label_ProjEnv
+    properties: {}
+    type: Label
+  - components: []
     layout_properties: {grid_position: 'CPQEEQ,WDXTKZ'}
     name: column_panel_1_copy
-    properties: {background: '', border: '', col_spacing: medium, col_widths: '{"YLXRWP":10,"LYABML":15,"LGIEHK":15,"TIMQHF":15,"RAKCLV":15,"XIVNIN":15}', foreground: '', role: question-box, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
+    properties: {background: '', border: '', col_spacing: medium, col_widths: '{"TIMQHF":15}', foreground: '', role: question-box, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
     type: ColumnPanel
-  - components:
-    - layout_properties: {grid_position: 'JHPBLZ,PWPDOE'}
-      name: label_7
-      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: Project Existing, tooltip: '', underline: false, visible: true}
-      type: Label
-    - layout_properties: {grid_position: 'UPHAGZ,SAYECH'}
-      name: projectex_RY
-      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:Gray 900', group_name: radioGroup1, italic: false, role: null, selected: false, spacing_above: small, spacing_below: small, text: 'Yes', tooltip: '', underline: false, value: never, visible: true}
-      type: RadioButton
-    - layout_properties: {grid_position: 'IVEJII,AQDGPA'}
-      name: projectex_RN
-      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:Gray 900', group_name: radioGroup1, italic: false, role: null, selected: false, spacing_above: small, spacing_below: small, text: 'No', tooltip: '', underline: false, value: occasionally, visible: true}
-      type: RadioButton
-    layout_properties: {grid_position: 'CVHDSX,FCKBDB'}
-    name: column_panel_2
-    properties: {background: '', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: question-box, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
-    type: ColumnPanel
-  - components:
-    - layout_properties: {grid_position: 'PSRMRK,DKVAOU'}
-      name: label_7_copy
-      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: Project Ticketing tool, tooltip: '', underline: false, visible: true}
-      type: Label
-    - event_bindings: {clicked: projecttick_RY_clicked}
-      layout_properties: {grid_position: 'GINEWQ,QBGTJJ'}
-      name: projecttick_RY
-      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:Gray 900', group_name: radioGroup2, italic: false, role: null, selected: false, spacing_above: small, spacing_below: small, text: 'Yes', tooltip: '', underline: false, value: 'Yes', visible: true}
-      type: RadioButton
-    - layout_properties: {grid_position: 'VJNMOQ,BDOIXR'}
-      name: projecttick_RN
-      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:Gray 900', group_name: radioGroup2, italic: false, role: null, selected: false, spacing_above: small, spacing_below: small, text: 'No', tooltip: '', underline: false, value: 'No', visible: true}
-      type: RadioButton
+  - layout_properties: {grid_position: 'NMPQOU,KZNKIO'}
+    name: label_7
+    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: Project Existing, tooltip: '', underline: false, visible: true}
+    type: Label
+  - layout_properties: {grid_position: 'NMPQOU,WYZJEK'}
+    name: Label_ProjExist
+    properties: {}
+    type: Label
+  - layout_properties: {grid_position: 'SFEBNL,NGXUAU'}
+    name: label_7_copy
+    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: Project Ticketing tool, tooltip: '', underline: false, visible: true}
+    type: Label
+  - layout_properties: {grid_position: 'SFEBNL,IPKDVU'}
+    name: Label_ProjTick
+    properties: {}
+    type: Label
+  - components: []
     layout_properties: {grid_position: 'CVHDSX,AJLFDB'}
     name: column_panel_2_copy
     properties: {background: '', border: '', col_spacing: huge, col_widths: '{}', foreground: '', role: question-box, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
     type: ColumnPanel
+  - layout_properties: {grid_position: 'GRZKKO,AFHMNA'}
+    name: label_8
+    properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: Project Reporting, tooltip: '', underline: false, visible: true}
+    type: Label
+  - layout_properties: {grid_position: 'GRZKKO,JTHFUG'}
+    name: label_1
+    properties: {}
+    type: Label
   - components:
-    - layout_properties: {grid_position: 'BUUQFX,IIKFMG'}
-      name: label_8
-      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: Project Reporting, tooltip: '', underline: false, visible: true}
-      type: Label
     - data_bindings: []
       event_bindings: {change: Reporting_slider_change}
       layout_properties: {full_width_row: false, grid_position: 'DWFUWH,ISZHEO'}
