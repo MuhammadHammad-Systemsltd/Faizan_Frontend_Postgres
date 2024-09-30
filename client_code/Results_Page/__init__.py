@@ -17,10 +17,17 @@ class Results_Page(Results_PageTemplate):
     self.Values = Values
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.Label_ProjCov.text = Values[0]
-    self.Label_ProjLoc.text = Values[1]
-    self.Label_ProjClient.text = Values[2]
-    # self.slider_label.text = self.slider_levels[self.Reporting_slider.level]
+    self.Label_ProjModel.text, self.Label_Username.text, self.Label_ProjName.text = Values[0], Values[1], Values[2]
+    self.Label_ProjCov.text, self.Label_ProjLoc.text = Values[3], Values[4]
+    self.Label_ProjClient.text, self.Label_SupLvl.text  = Values[5], Values[6]
+    self.Label_ProjTech.text,  self.Label_ProjEnv.text = Values[7], Values[8]
+    self.Label_ProjExist.text, self.Label_ProjTick.text = Values[9], Values[10]
+    self.label_ProjRep.text, self.label_VoiceSup.text = Values[11], Values[12]
+    self.label_ProjSLA.text, self.label_ProjMon.text = Values[13], Values[14]
+    self.label_ProjTickCnt.text, self.label_ProjSupMed.text = Values[15], Values[16]
+    self.label_ProjnoPortals.text, self.Feedback.text = Values[17], Values[18]
+    
+  # self.slider_label.text = self.slider_levels[self.Reporting_slider.level]
 
   def Reporting_slider_change(self, level, **event_args):
     """This method is called when the slider is moved"""
@@ -28,17 +35,21 @@ class Results_Page(Results_PageTemplate):
 
   def submit_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    
     print(self.Values)
     if None not in self.Values:
       # anvil.server.call('add_responses', age, frequency, methods, rating, comments)
-      anvil.server.call("save", self.Values)
+      # anvil.server.call("save", self.Values)
       alert("Thank you for submitting the form!\nWe will get back to you shortly!")
-      get_open_form().content_panel.clear()
-      get_open_form().content_panel.add_component(Success(), full_width_row=True)
+      self.content_panel.clear()
+      open_form('Success')
     else:
       alert("Please fill out required fields")
 
   def submit_button_hide(self, **event_args):
     """This method is called when the Button is removed from the screen"""
     pass
+
+  def BackButton_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.content_panel.clear()
+    open_form('Survey')

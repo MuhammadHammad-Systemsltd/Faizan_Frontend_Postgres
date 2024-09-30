@@ -66,8 +66,8 @@ class Survey(SurveyTemplate):
     if None not in Values:
       # anvil.server.call('add_responses', age, frequency, methods, rating, comments)
       alert("Thank you for submitting the form!\nWe will get back to you shortly!")
-      get_open_form().content_panel.clear()
-      get_open_form().content_panel.add_component(Results_Page(), full_width_row=True)
+      self.content_panel.clear()
+      open_form('Results_Page')
     else:
       alert("Please fill out required fields")
 
