@@ -39,7 +39,7 @@ components:
     type: RichText
   - layout_properties: {grid_position: 'CRRUDG,XQOJZI'}
     name: Label_ProjCov
-    properties: {}
+    properties: {foreground: 'theme:Black'}
     type: Label
   - layout_properties: {grid_position: 'LTSOCN,EVWJXY'}
     name: rich_text_1_copy_copy
@@ -47,7 +47,7 @@ components:
     type: RichText
   - layout_properties: {grid_position: 'LTSOCN,AUHUEF'}
     name: Label_ProjLoc
-    properties: {}
+    properties: {foreground: 'theme:Black'}
     type: Label
   - layout_properties: {grid_position: 'ACCTDT,AZIBRT'}
     name: rich_text_1_copy_2
@@ -55,7 +55,7 @@ components:
     type: RichText
   - layout_properties: {grid_position: 'ACCTDT,PZXUOW'}
     name: Label_ProjClient
-    properties: {}
+    properties: {foreground: 'theme:Black'}
     type: Label
   - layout_properties: {grid_position: 'KEXSAJ,ZMILGA'}
     name: label_5_copy

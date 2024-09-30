@@ -11,11 +11,11 @@ from ..Success import Success
 from ..Results_Page import Results_Page
 import random
 
+Values = []
 class Survey(SurveyTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.Values = []
     self.slider_levels = {1: 'No',
                           2: 'Daily',
                           3: 'Weekly',
@@ -31,6 +31,7 @@ class Survey(SurveyTemplate):
 
   def submit_button_click(self, **event_args):
     from ..Introduction import User_details
+    global Values
     """This method is called when the button is clicked"""
     ## Page 1 or Section 1 Project Details
     coverage = self.coverage_dropdown.selected_value
