@@ -14,23 +14,9 @@ def check_admin():
 
 @anvil.server.callable
 @anvil.tables.in_transaction
-def add_responses(age, frequency, methods, rating, comments):
-
-  age_row = app_tables.age.get(options=age)
-  age_row['num_responses'] = (age_row['num_responses'] or 0) + 1
-  
-  ratings_row = app_tables.ratings.get(options=rating)
-  ratings_row['num_responses'] = (ratings_row['num_responses'] or 0) + 1
-  
-  frequency_row = app_tables.frequency.get(options=frequency)
-  frequency_row['num_responses'] = (frequency_row['num_responses'] or 0) + 1
-  
-  for method in methods:
-    method_row = app_tables.method.get(options=method)
-    method_row['num_responses'] = (method_row['num_responses'] or 0) + 1
-  
-  app_tables.responses.add_row(age=age_row, frequency=frequency_row, method=method_row, rating=ratings_row, comments=comments)
-
+def save(Values):
+  print("called Server success")
+  app_tables.serversidedata.add_row(Values)
 
 @anvil.server.callable
 def get_total_responses():

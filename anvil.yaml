@@ -1,74 +1,68 @@
 allow_embedding: false
 correct_dependency_ids: {OHWC42ZUNUZNJNLA: OHWC42ZUNUZNJNLA}
 db_schema:
-  age:
-    client: search
-    columns:
-    - admin_ui: {width: 200}
-      name: options
-      type: string
-    - admin_ui: {width: 200}
-      name: num_responses
-      type: number
-    server: full
-    title: Age
-  frequency:
+  serversidedata:
     client: none
     columns:
-    - admin_ui: {width: 200}
-      name: options
+    - admin_ui: {order: 0, width: 200}
+      name: ProjectModel
       type: string
-    - admin_ui: {width: 200}
-      name: num_responses
-      type: number
-    server: full
-    title: Frequency
-  method:
-    client: none
-    columns:
-    - admin_ui: {width: 200}
-      name: options
+    - admin_ui: {order: 1, width: 200}
+      name: Username
       type: string
-    - admin_ui: {width: 200}
-      name: num_responses
-      type: number
-    server: full
-    title: Method
-  ratings:
-    client: search
-    columns:
-    - admin_ui: {width: 200}
-      name: options
+    - admin_ui: {order: 2, width: 200}
+      name: ProjectName
       type: string
-    - admin_ui: {width: 200}
-      name: num_responses
-      type: number
-    server: full
-    title: Ratings
-  responses:
-    client: none
-    columns:
-    - admin_ui: {width: 200}
-      name: age
-      target: age
-      type: link_single
-    - admin_ui: {width: 200}
-      name: frequency
-      target: frequency
-      type: link_single
-    - admin_ui: {width: 200}
-      name: method
-      target: method
-      type: link_single
-    - admin_ui: {width: 200}
-      name: rating
-      target: ratings
-      type: link_single
-    - admin_ui: {width: 200}
-      name: comments
+    - admin_ui: {order: 3, width: 200}
+      name: ProjCov
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      name: ProjectLocation
+      type: string
+    - admin_ui: {order: 5, width: 200}
+      name: ProjectClient
+      type: string
+    - admin_ui: {order: 6, width: 200}
+      name: ProjectSupportLvl
+      type: string
+    - admin_ui: {order: 7, width: 200}
+      name: ProjectTechnology
+      type: string
+    - admin_ui: {order: 8, width: 200}
+      name: ProjEnv
+      type: string
+    - admin_ui: {order: 9, width: 200}
+      name: ProjExist
+      type: string
+    - admin_ui: {order: 10, width: 200}
+      name: ProjTicketing
+      type: string
+    - admin_ui: {order: 11, width: 200}
+      name: ProjectRep
+      type: string
+    - admin_ui: {order: 12, width: 200}
+      name: ProjVoiceSup
+      type: string
+    - admin_ui: {order: 13, width: 200}
+      name: ProjSLA
+      type: string
+    - admin_ui: {order: 14, width: 200}
+      name: ProjMon
+      type: string
+    - admin_ui: {order: 15, width: 200}
+      name: ProjTicketCnt
+      type: string
+    - admin_ui: {order: 16, width: 200}
+      name: ProjSupMed
+      type: string
+    - admin_ui: {order: 17, width: 200}
+      name: ProjnoPortals
+      type: string
+    - admin_ui: {order: 18, width: 200}
+      name: Feedback
       type: string
     server: full
-    title: Responses
+    title: ServerSideData
   users:
     client: none
     columns:
@@ -95,6 +89,9 @@ db_schema:
 dependencies:
 - dep_id: dep_l9dwwpg5lrfzw
   resolution_hints: {app_id: TVV7EFHSOTSLKUZP, name: Clone of Slider Example, package_name: SliderDemo}
+  version: {branch: master}
+- dep_id: dep_6otapkm9wzjow
+  resolution_hints: {app_id: LX3VYGPZUQ4OPCAQ, name: Clone of Slider Component, package_name: SliderDemo}
   version: {branch: master}
 metadata: {description: This is a prototype Frontend built with Anvil, logo_img: '', title: Frontend}
 name: Faizan's Frontend
