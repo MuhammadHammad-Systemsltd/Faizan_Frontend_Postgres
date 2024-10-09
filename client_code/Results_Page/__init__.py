@@ -43,7 +43,7 @@ class Results_Page(Results_PageTemplate):
     print(self.Values)
     if None not in self.Values:
       anvil.server.call('save', self.Values)
-      app_tables.serversidedata.add_row(Values[0], Values[1], Values[2], Values[3], Values[4], Values[5], Values[6], Values[7], Values[8], Values[9], Values[10], Values[13], Values[14], Values[15], Values[16], Values[17], Values[18])
+      app_tables.serversidedata.add_row(ProjectModel=self.Values[0], Username=self.Values[1], ProjectName=self.Values[2], ProjCov=self.Values[3], ProjectLocation=self.Values[4], ProjectClient=self.Values[5], ProjectSupportLvl=self.Values[6], ProjectTechnology=self.Values[7], ProjEnv=self.Values[8], ProjExist=self.Values[9], ProjTicketing=self.Values[10], ProjectRep=self.Values[11], ProjVoiceSup=self.Values[12], ProjSLA=self.Values[13], ProjMon=self.Values[14], ProjTicketCnt=self.Values[15], ProjSupMed=self.Values[16], ProjnoPortals=self.Values[17], Feedback=self.Values[18])
       alert("Thank you for submitting the form!\nWe will get back to you shortly!")
       self.content_panel.clear()
       open_form('Success')
