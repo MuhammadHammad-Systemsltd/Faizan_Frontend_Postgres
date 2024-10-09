@@ -93,9 +93,7 @@ db_schema:
     server: full
     title: Users
 dependencies:
-- dep_id: OHWC42ZUNUZNJNLA
-  version: {dev: false}
-- dep_id: dep_of5u8nps21d3oe
+- dep_id: dep_l9dwwpg5lrfzw
   resolution_hints: {app_id: TVV7EFHSOTSLKUZP, name: Clone of Slider Example, package_name: SliderDemo}
   version: {branch: master}
 metadata: {description: This is a prototype Frontend built with Anvil, logo_img: '', title: Frontend}
