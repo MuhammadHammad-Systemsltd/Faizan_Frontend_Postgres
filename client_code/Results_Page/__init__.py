@@ -26,7 +26,7 @@ class Results_Page(Results_PageTemplate):
     self.label_ProjSLA.text, self.label_ProjMon.text = Values[13], Values[14]
     self.label_ProjTickCnt.text, self.label_ProjSupMed.text = Values[15], Values[16]
     self.label_ProjnoPortals.text, self.Feedback.text = Values[17], Values[18]
-    
+
     if int(Values[19]) >= 25:
         self.Label_Display_resourcereq.text = "Number of resources required for the project are Minimum 4 or Maximum 5"
     else:
@@ -43,6 +43,7 @@ class Results_Page(Results_PageTemplate):
     print(self.Values)
     if None not in self.Values:
       anvil.server.call('save', self.Values)
+      app_tables.serversidedata.add_row(Values[0], Values[1], Values[2], Values[3], Values[4], Values[5], Values[6], Values[7], Values[8], Values[9], Values[10], Values[13], Values[14], Values[15], Values[16], Values[17], Values[18])
       alert("Thank you for submitting the form!\nWe will get back to you shortly!")
       self.content_panel.clear()
       open_form('Success')
