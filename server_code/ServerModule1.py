@@ -16,8 +16,7 @@ def check_admin():
 @anvil.tables.in_transaction
 def save(Values):
   print("called Server success")
-  app_tables.serversidedata.add_row(Values[])
-
+  app_tables.serversidedata.add_row(ProjectModel=Values[0], Username=Values[1], ProjectName=Values[2])
 @anvil.server.callable
 def get_total_responses():
   return len(app_tables.responses.search())
