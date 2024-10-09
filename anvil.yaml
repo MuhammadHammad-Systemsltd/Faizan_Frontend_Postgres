@@ -95,6 +95,9 @@ db_schema:
 dependencies:
 - dep_id: OHWC42ZUNUZNJNLA
   version: {dev: false}
+- dep_id: dep_of5u8nps21d3oe
+  resolution_hints: {app_id: TVV7EFHSOTSLKUZP, name: Clone of Slider Example, package_name: SliderDemo}
+  version: {branch: master}
 metadata: {description: This is a prototype Frontend built with Anvil, logo_img: '', title: Frontend}
 name: Faizan's Frontend
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">'}
