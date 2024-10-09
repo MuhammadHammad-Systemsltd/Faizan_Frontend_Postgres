@@ -2,7 +2,7 @@ allow_embedding: false
 correct_dependency_ids: {OHWC42ZUNUZNJNLA: OHWC42ZUNUZNJNLA}
 db_schema:
   serversidedata:
-    client: none
+    client: full
     columns:
     - admin_ui: {order: 0, width: 200}
       name: ProjectModel
@@ -96,7 +96,7 @@ dependencies:
 metadata: {description: This is a prototype Frontend built with Anvil, logo_img: '', title: Frontend}
 name: Faizan's Frontend
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">'}
-package_name: Faizan_s_Frontend
+package_name: Faizan_Frontend
 renamed: true
 runtime_options: {client_version: '3', server_spec: null, server_version: python3-sandbox, version: 2}
 services:

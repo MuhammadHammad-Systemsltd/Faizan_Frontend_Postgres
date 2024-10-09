@@ -42,7 +42,7 @@ class Results_Page(Results_PageTemplate):
     """This method is called when the button is clicked"""
     print(self.Values)
     if None not in self.Values:
-      anvil.server.call("save", self.Values)
+      anvil.server.call('save', self.Values)
       alert("Thank you for submitting the form!\nWe will get back to you shortly!")
       self.content_panel.clear()
       open_form('Success')
