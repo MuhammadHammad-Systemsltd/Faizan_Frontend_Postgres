@@ -16,7 +16,6 @@ class Landing_Page(Landing_PageTemplate):
     self.init_components(**properties)
     
     if anvil.server.call('check_admin'):
-      self.report_link.visible = True
       self.login_link.visible = False
       self.logout_link.visible = True
   
@@ -28,7 +27,7 @@ class Landing_Page(Landing_PageTemplate):
   def login_link_click(self, **event_args):
     """This method is called when the link is clicked"""
     anvil.users.login_with_form()
-    open_form('Form1')
+    open_form('Download_page')
 
   def Home_link_click(self, **event_args):
     """This method is called when the link is clicked"""
@@ -44,7 +43,6 @@ class Landing_Page(Landing_PageTemplate):
     self.content_panel.add_component(Introduction(), full_width_row=True)
     self.logout_link.visible = False
     self.login_link.visible = True
-    self.report_link.visible = False
 
 
 

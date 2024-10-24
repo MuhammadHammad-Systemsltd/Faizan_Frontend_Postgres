@@ -9,7 +9,7 @@ import anvil.server
 
 @anvil.server.callable
 def check_admin():
-   if anvil.users.get_user():
+   if anvil.users.get_user() == "hammad@hammad.asd":
       return True
 
 @anvil.server.callable
