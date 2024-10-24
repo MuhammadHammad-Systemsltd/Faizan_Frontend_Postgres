@@ -21,7 +21,7 @@ components:
       italic: false
       text: |-
         Congratulations!
-        We have successfully received your Input.
+        We have successfully received your input.
     type: Label
   layout_properties: {slot: default}
   name: card_1
