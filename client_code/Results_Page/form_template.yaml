@@ -2,267 +2,255 @@ components:
 - components:
   - layout_properties: {grid_position: 'KEOHOZ,BQUSKO'}
     name: spacer_1
-    properties: {height: 73}
+    properties: {height: 35.80000305175781}
     type: Spacer
-  - layout_properties: {grid_position: 'SSUVUV,RLPXNQ'}
+  - layout_properties: {grid_position: 'OGNQNN,YYBLZF'}
     name: label_2
     properties: {align: center, background: '', bold: true, border: '12', font: Raleway, font_size: 32, foreground: 'theme:White', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Please Confirm Your Project Details:', tooltip: '', underline: false, visible: true}
     type: Label
   - layout_properties: {grid_position: 'LANDLI,YWFDJP'}
     name: spacer_1_copy
-    properties: {height: 73}
-    type: Spacer
-  - layout_properties: {grid_position: 'ZNSBMS,TPPYWP'}
-    name: spacer_4
-    properties: {height: 32}
+    properties: {height: 45.600006103515625}
     type: Spacer
   layout_properties: {grid_position: 'NYQFOC,VOGQZW'}
   name: card_1
-  properties: {background: 'theme:Primary 500', border: '', col_spacing: medium, col_widths: '{"SDXJHH":35}', foreground: '', role: null, spacing_above: none, spacing_below: none, tooltip: '', visible: true, wrap_on: mobile}
+  properties: {background: 'theme:Primary 500', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: null, spacing_above: none, spacing_below: none, tooltip: '', visible: true, wrap_on: mobile}
   type: ColumnPanel
 - components:
-  - layout_properties: {grid_position: 'MLOYNA,KENPFC'}
-    name: spacer_2
-    properties: {height: 64}
-    type: Spacer
   - layout_properties: {grid_position: 'DCGNDG,VBMEOF'}
     name: label_5_copy_2
-    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Client Details:', tooltip: '', underline: false, visible: true}
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Client Details:', tooltip: '', underline: false, visible: true}
     type: Label
   - components: []
     layout_properties: {grid_position: 'PZIJIM,BDCNSZ'}
     name: rich_text_1_copy_copy_2
     properties: {align: left, background: '', content: 'Username:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
     type: RichText
-  - layout_properties: {grid_position: 'PZIJIM,XHCVDT'}
+  - layout_properties: {grid_position: 'PZIJIM,NXHRME'}
     name: Label_Username
-    properties: {foreground: 'theme:Black'}
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
     type: Label
-  - layout_properties: {grid_position: 'TKZHYV,WFIRYJ DEZIME,BXUBQR'}
+  - layout_properties: {grid_position: 'DEZIME,BXUBQR'}
     name: rich_text_1_copy_copy_2_copy_2
     properties: {align: left, background: '', content: 'Project Model:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
     type: RichText
+  - data_bindings: []
+    layout_properties: {grid_position: 'DEZIME,TLTZMJ'}
+    name: Label_ProjModel
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
+    type: Label
   - components: []
-    layout_properties: {grid_position: 'TKZHYV,WFIRYJ MHKZKX,MYZKTT'}
+    layout_properties: {grid_position: 'MHKZKX,MYZKTT'}
     name: rich_text_1_copy_copy_2_copy
     properties: {align: left, background: '', content: 'Project Name:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
     type: RichText
-  - data_bindings: []
-    layout_properties: {grid_position: 'TKZHYV,ZSZJAA KKDNDG,YLORMW'}
-    name: Label_ProjModel
-    properties: {foreground: 'theme:Black'}
-    type: Label
-  - layout_properties: {grid_position: 'TKZHYV,ZSZJAA WENXRH,HBOVGN'}
+  - layout_properties: {grid_position: 'MHKZKX,BQTRMH'}
     name: Label_ProjName
-    properties: {foreground: 'theme:Black'}
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
     type: Label
   layout_properties: {grid_position: 'CZSYAD,IRLMVS'}
   name: card_2
   properties: {role: card}
   type: ColumnPanel
 - components:
-  - layout_properties: {grid_position: 'YLZXPY,HEYXWJ'}
-    name: spacer_5_copy_copy_copy_2
-    properties: {height: 32}
-    type: Spacer
-  - layout_properties: {grid_position: ''}
-    name: Label_ProjClient
-    properties: {foreground: 'theme:Black'}
+  - layout_properties: {grid_position: 'PRQBMX,DMXHYB'}
+    name: label_5
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Project Details:', tooltip: '', underline: false, visible: true}
     type: Label
   - components: []
-    layout_properties: {grid_position: ''}
+    layout_properties: {grid_position: 'DLETGD,MKNGFW'}
     name: rich_text_1_copy_2
     properties: {align: left, background: '', content: 'Project Client:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
     type: RichText
-  - layout_properties: {grid_position: ''}
+  - layout_properties: {grid_position: 'DLETGD,TVHOVL'}
+    name: Label_ProjClient
+    properties: {bold: true, font: '', font_size: 16, foreground: 'theme:Black'}
+    type: Label
+  - layout_properties: {grid_position: 'KCGUDS,CCPJLF'}
     name: rich_text_1_copy_copy
     properties: {align: left, background: '', content: 'Project Location:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
     type: RichText
-  - layout_properties: {grid_position: ''}
+  - layout_properties: {grid_position: 'KCGUDS,YLTHKO'}
     name: Label_ProjLoc
-    properties: {foreground: 'theme:Black'}
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
     type: Label
-  - layout_properties: {grid_position: ''}
-    name: Label_ProjCov
-    properties: {foreground: 'theme:Black'}
-    type: Label
-  - layout_properties: {grid_position: ''}
+  - layout_properties: {grid_position: 'CTDKJK,PVXOML'}
     name: rich_text_1_copy
     properties: {align: left, background: '', content: 'Project Coverage:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
     type: RichText
-  - layout_properties: {grid_position: ''}
-    name: label_5
-    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Project Details:', tooltip: '', underline: false, visible: true}
+  - layout_properties: {grid_position: 'CTDKJK,JFMAVF'}
+    name: Label_ProjCov
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
     type: Label
   layout_properties: {grid_position: 'EPYVOK,VPNQMU'}
   name: card_3
   properties: {role: card}
   type: ColumnPanel
 - components:
-  - layout_properties: {grid_position: 'NZWSDG,RRYHXS'}
-    name: spacer_5_copy_copy_copy
-    properties: {height: 32}
-    type: Spacer
-  - layout_properties: {grid_position: 'KEXSAJ,ZMILGA'}
+  - layout_properties: {grid_position: ''}
     name: label_5_copy
-    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Technical Details:', tooltip: '', underline: false, visible: true}
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Technical Details:', tooltip: '', underline: false, visible: true}
     type: Label
   - components: []
-    layout_properties: {grid_position: 'MMNBYV,FTXIGP'}
+    layout_properties: {grid_position: 'XSKZLH,OVSAIK'}
     name: rich_text_1_copy_2_copy
     properties: {align: left, background: '', content: 'Project Support Level:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
     type: RichText
-  - layout_properties: {grid_position: 'MMNBYV,UTKDTK'}
+  - layout_properties: {grid_position: 'XSKZLH,OXPQGQ'}
     name: Label_SupLvl
-    properties: {foreground: 'theme:Black'}
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
     type: Label
   - components: []
-    layout_properties: {grid_position: 'VLYGAL,SEVHZP'}
+    layout_properties: {grid_position: 'OTJLNC,MUYNOL'}
     name: rich_text_1_copy_2_copy_copy
     properties: {align: left, background: '', content: 'Project Technology:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
     type: RichText
-  - layout_properties: {grid_position: 'VLYGAL,EZHOVH'}
+  - layout_properties: {grid_position: 'OTJLNC,CCTJFE'}
     name: Label_ProjTech
-    properties: {foreground: 'theme:Black'}
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
     type: Label
   - components: []
-    layout_properties: {grid_position: 'QXMUXZ,YYPXAU'}
+    layout_properties: {grid_position: 'NULYXX,HBCKMP'}
     name: rich_text_1_copy_2_copy_copy_2
     properties: {align: left, background: '', content: 'Project Environment:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
     type: RichText
-  - layout_properties: {grid_position: 'QXMUXZ,QJLGZS'}
+  - layout_properties: {grid_position: 'NULYXX,KBRVUS'}
     name: Label_ProjEnv
-    properties: {foreground: 'theme:Black'}
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
     type: Label
-  - layout_properties: {grid_position: 'MPQYUL,CMHUVP'}
-    name: spacer_5
-    properties: {height: 32}
-    type: Spacer
-  - layout_properties: {grid_position: 'NMPQOU,KZNKIO'}
+  layout_properties: {grid_position: 'IMMWVN,TUDFQY'}
+  name: card_4
+  properties: {role: card}
+  type: ColumnPanel
+- components:
+  - layout_properties: {grid_position: 'UWWFIP,HXUPGG'}
     name: label_7
-    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Project Existing:', tooltip: '', underline: false, visible: true}
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Project Existing:', tooltip: '', underline: false, visible: true}
     type: Label
-  - layout_properties: {grid_position: 'NMPQOU,WYZJEK'}
+  - layout_properties: {grid_position: 'UWWFIP,FMPQEO'}
     name: Label_ProjExist
-    properties: {foreground: 'theme:Black'}
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
     type: Label
-  - layout_properties: {grid_position: 'SFEBNL,NGXUAU'}
+  - layout_properties: {grid_position: 'HWKZLW,WHMPJV'}
     name: label_7_copy
-    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Project Ticketing tool:', tooltip: '', underline: false, visible: true}
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Project Ticketing tool:', tooltip: '', underline: false, visible: true}
     type: Label
-  - layout_properties: {grid_position: 'SFEBNL,IPKDVU'}
+  - layout_properties: {grid_position: 'HWKZLW,HNQYGC'}
     name: Label_ProjTick
-    properties: {foreground: 'theme:Black'}
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
     type: Label
-  - layout_properties: {grid_position: 'GRZKKO,AFHMNA'}
+  - layout_properties: {grid_position: 'JWSEPM,ZYZSAG'}
     name: label_8
-    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Project Reporting:', tooltip: '', underline: false, visible: true}
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Project Reporting:', tooltip: '', underline: false, visible: true}
     type: Label
-  - layout_properties: {grid_position: 'GRZKKO,JTHFUG'}
+  - layout_properties: {grid_position: 'JWSEPM,KTKGWI'}
     name: label_ProjRep
-    properties: {foreground: 'theme:Black'}
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
     type: Label
-  - layout_properties: {grid_position: 'NOEQRT,MPXAZK'}
-    name: spacer_5_copy_copy
-    properties: {height: 32}
-    type: Spacer
-  - layout_properties: {grid_position: 'RDBXNY,DWPJJK'}
+  layout_properties: {grid_position: 'FZXUXV,SGQBKH'}
+  name: card_5
+  properties: {role: card}
+  type: ColumnPanel
+- components:
+  - layout_properties: {grid_position: 'WXLRNF,QRWPCE'}
     name: label_5_copy_copy
-    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Project Support Requirements:', tooltip: '', underline: false, visible: true}
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Project Support Requirements:', tooltip: '', underline: false, visible: true}
     type: Label
   - components: []
-    layout_properties: {grid_position: 'KFLIFT,PCIRGD'}
+    layout_properties: {grid_position: 'JURZJD,UXDPVU'}
     name: rich_text_1_copy_2_copy_copy_2_copy
     properties: {align: left, background: '', content: 'Voice Support:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
     type: RichText
-  - layout_properties: {grid_position: 'KFLIFT,CQOXXH'}
+  - layout_properties: {grid_position: 'JURZJD,SMODNA'}
     name: label_VoiceSup
-    properties: {foreground: 'theme:Black'}
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
     type: Label
   - components: []
-    layout_properties: {grid_position: 'AUVDHX,WIMBAB'}
+    layout_properties: {grid_position: 'EJKSRS,FBRGOW'}
     name: rich_text_1_copy_2_copy_copy_2_copy_2_copy
     properties: {align: left, background: '', content: 'Project SLA:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
     type: RichText
-  - layout_properties: {grid_position: 'AUVDHX,YDYSBA'}
+  - layout_properties: {grid_position: 'EJKSRS,SCXUZI'}
     name: label_ProjSLA
-    properties: {foreground: 'theme:Black'}
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
     type: Label
   - components: []
-    layout_properties: {grid_position: 'AOVGQY,HOSHUN'}
+    layout_properties: {grid_position: 'NTKUDW,TWXWSE'}
     name: rich_text_2
     properties: {align: left, background: '', content: 'Project Monitor:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
     type: RichText
-  - layout_properties: {grid_position: 'AOVGQY,CHUVCW'}
+  - layout_properties: {grid_position: 'NTKUDW,VLEZAG'}
     name: label_ProjMon
-    properties: {foreground: 'theme:Black'}
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
     type: Label
   - components: []
-    layout_properties: {grid_position: 'FZEAEL,TUOGBR'}
+    layout_properties: {grid_position: 'JDSCKW,RIYPYW'}
     name: rich_text_1_copy_2_copy_copy_2_copy_2
     properties: {align: left, background: '', content: 'Tickets Count:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
     type: RichText
-  - layout_properties: {grid_position: 'FZEAEL,DQAAJT'}
+  - layout_properties: {grid_position: 'JDSCKW,YYTUTV'}
     name: label_ProjTickCnt
-    properties: {foreground: 'theme:Black'}
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
     type: Label
   - components: []
-    layout_properties: {grid_position: 'RYOPVN,KHBNUU'}
+    layout_properties: {grid_position: 'IZCJQK,OXPQOS'}
     name: rich_text_1_copy_2_copy_copy_2_copy_2_copy_copy
     properties: {align: left, background: '', content: 'Support Medium:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
     type: RichText
-  - layout_properties: {grid_position: 'RYOPVN,DEAEYH'}
+  - layout_properties: {grid_position: 'IZCJQK,QHTKBR'}
     name: label_ProjSupMed
-    properties: {foreground: 'theme:Black'}
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
     type: Label
   - components: []
-    layout_properties: {grid_position: 'BPMSEV,AOTTVR'}
+    layout_properties: {grid_position: 'PWDQEM,COSMSI'}
     name: rich_text_2_copy
     properties: {align: left, background: '', content: 'Number of portals:', font_size: 16, foreground: 'theme:Black', format: plain_text, spacing_above: small}
     type: RichText
-  - layout_properties: {grid_position: 'BPMSEV,IXWMGE'}
+  - layout_properties: {grid_position: 'PWDQEM,ELVVYO'}
     name: label_ProjnoPortals
-    properties: {foreground: 'theme:Black'}
+    properties: {bold: true, font_size: 16, foreground: 'theme:Black'}
     type: Label
-  - layout_properties: {grid_position: 'OTMRWN,EKXJGH'}
-    name: spacer_5_copy
-    properties: {height: 32}
-    type: Spacer
-  - layout_properties: {grid_position: 'BAOYPJ,QORBSW'}
+  - layout_properties: {grid_position: 'ZFBBKR,BNDXNH'}
     name: label_9
-    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Proposal Text:', tooltip: '', underline: false, visible: true}
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Proposal Text:', tooltip: '', underline: false, visible: true}
     type: Label
-  - layout_properties: {grid_position: 'XZXMIL,RAOUJB'}
+  - layout_properties: {grid_position: 'ILIDBL,VUNTHQ'}
     name: Feedback
-    properties: {foreground: 'theme:Black'}
+    properties: {background: '', bold: true, border: solid black 2px, font_size: 15, foreground: 'theme:Black'}
     type: Label
-  - layout_properties: {grid_position: 'QQZBTS,EZCIBC'}
+  - layout_properties: {grid_position: 'SOEGQW,GLBVAA'}
     name: label_9_copy
-    properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Resource Requirements:', tooltip: '', underline: false, visible: true}
+    properties: {align: center, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Resource Requirements:', tooltip: '', underline: false, visible: true}
     type: Label
-  - layout_properties: {grid_position: 'FZMBMS,ZQIACF'}
+  - layout_properties: {grid_position: 'ABXORZ,DSOSYK'}
     name: Label_Display_resourcereq
-    properties: {align: center, foreground: 'theme:Black'}
+    properties: {align: center, bold: true, font_size: 18, foreground: 'theme:Black', italic: false, underline: false}
     type: Label
-  - event_bindings: {click: BackButton_click}
-    layout_properties: {grid_position: 'CJVCXF,YGVOFD'}
+  - data_bindings: []
+    event_bindings: {click: BackButton_click}
+    layout_properties: {full_width_row: true, grid_position: 'GBBVRD,MEZEGC'}
     name: BackButton
-    properties: {align: left, background: 'theme:Primary 500', bold: true, border: 'border-radius: 12px', font_size: 18, foreground: 'theme:White', icon: 'fa:arrow-circle-left', text: BACK}
+    properties: {align: center, background: 'theme:Primary 500', bold: true, border: '', font_size: 18, foreground: 'theme:White', icon: 'fa:arrow-circle-left', text: BACK}
     type: Button
   - data_bindings: []
     event_bindings: {click: submit_button_click}
-    layout_properties: {grid_position: 'CJVCXF,TSINFR'}
+    layout_properties: {full_width_row: true, grid_position: 'GBBVRD,XZBFQB'}
     name: submit_button
-    properties: {align: right, background: 'theme:Primary 500', bold: true, border: 'border-radius: 12px', enabled: true, font: '', font_size: 18, foreground: 'theme:White', icon: 'fa:arrow-circle-right', icon_align: right, italic: false, role: null, spacing_above: small, spacing_below: small, text: Submit, tooltip: '', underline: false, visible: true}
+    properties: {align: center, background: 'theme:Primary 500', bold: true, border: 'border-radius: 12px', enabled: true, font: '', font_size: 18, foreground: 'theme:White', icon: 'fa:arrow-circle-right', icon_align: right, italic: false, role: null, spacing_above: small, spacing_below: small, text: Submit, tooltip: '', underline: false, visible: true}
     type: Button
-  - layout_properties: {grid_position: 'PEVZOB,HTXBYT'}
+  - layout_properties: {grid_position: 'IWQEVF,WLITDY'}
     name: spacer_3
     properties: {height: 32}
     type: Spacer
-  - layout_properties: {grid_position: 'SNMNRK,ZPBWDM'}
+  - layout_properties: {grid_position: 'TYSVLD,AHXAHU'}
     name: label_4
     properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: 'theme:Gray 900', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '@ Systems LTD. All rights reserved.', tooltip: '', underline: false, visible: true}
     type: Label
+  layout_properties: {grid_position: 'NCNLIC,NHGGZC'}
+  name: card_6
+  properties: {col_spacing: medium, col_widths: '{}', role: card}
+  type: ColumnPanel
+- components: []
   layout_properties: {grid_position: 'RXJHHL,TEUEMC'}
   name: content_panel
   properties: {background: '', border: '', col_spacing: none, col_widths: '{}', foreground: 'theme:White', role: null, spacing_above: none, spacing_below: none, tooltip: '', visible: true, wrap_on: mobile}
