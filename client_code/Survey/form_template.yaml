@@ -213,35 +213,36 @@ components:
       name: label_8
       properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: Project Reporting, tooltip: '', underline: false, visible: true}
       type: Label
-    - data_bindings: []
-      event_bindings: {change: Reporting_slider_change}
-      layout_properties: {full_width_row: false, grid_position: 'DWFUWH,ISZHEO'}
-      name: Reporting_slider
-      properties: {level: 4, slider_max: 4, slider_min: 1, step: 1}
-      type: form:OHWC42ZUNUZNJNLA:Slider
-    - components: []
-      layout_properties: {grid_position: 'HWSJAL,ADDNFR'}
-      name: rich_text_3
-      properties: {align: center, content: None, enable_slots: false, foreground: 'theme:Black', format: plain_text}
-      type: RichText
-    - layout_properties: {grid_position: 'HWSJAL,FUTBPN'}
-      name: rich_text_6
-      properties: {content: Monthly, foreground: 'theme:Black'}
-      type: RichText
-    - components: []
-      layout_properties: {grid_position: 'HWSJAL,JPURNC'}
-      name: rich_text_5
-      properties: {content: Weekly, foreground: 'theme:Black'}
-      type: RichText
     - components:
+      - data_bindings: []
+        event_bindings: {change: Reporting_slider_change}
+        layout_properties: {grid_position: 'ZHOMXN,RSURIH'}
+        name: Reporting_slider
+        properties: {level: 4, slider_max: 4, slider_min: 1, step: 1}
+        type: form:OHWC42ZUNUZNJNLA:Slider
       - components: []
+        layout_properties: {grid_position: 'OSOOCW,WBHFTE'}
+        name: rich_text_3
+        properties: {align: center, content: None, enable_slots: false, foreground: 'theme:Black', format: plain_text}
+        type: RichText
+      - components: []
+        layout_properties: {grid_position: 'OSOOCW,NXWUYZ'}
         name: rich_text_4
         properties: {content: Daily, foreground: 'theme:Black'}
         type: RichText
-      layout_properties: {grid_position: 'HWSJAL,FLFONK'}
-      name: linear_panel_1
-      properties: {}
-      type: LinearPanel
+      - components: []
+        layout_properties: {grid_position: 'OSOOCW,LGJFXS'}
+        name: rich_text_5
+        properties: {content: Weekly, foreground: 'theme:Black'}
+        type: RichText
+      - layout_properties: {grid_position: 'OSOOCW,DTPMLR'}
+        name: rich_text_6
+        properties: {content: Monthly, foreground: 'theme:Black'}
+        type: RichText
+      layout_properties: {grid_position: 'ZKUTML,WUGHOZ'}
+      name: card_2
+      properties: {background: 'theme:Gray 300', role: card, wrap_on: never}
+      type: ColumnPanel
     layout_properties: {grid_position: 'BBRRDQ,WMJWSD'}
     name: column_panel_4
     properties: {background: '', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: question-box, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
@@ -343,7 +344,7 @@ components:
     event_bindings: {click: submit_button_click}
     layout_properties: {grid_position: 'DXQVFR,DDEHGB'}
     name: submit_button
-    properties: {align: center, background: 'theme:Primary 500', bold: true, border: 'border-radius: 12px', enabled: true, font: '', font_size: 18, foreground: 'theme:White', icon: 'fa:arrow-circle-right', icon_align: right, italic: false, role: null, spacing_above: small, spacing_below: small, text: Submit, tooltip: '', underline: false, visible: true}
+    properties: {align: right, background: 'theme:Primary 500', bold: true, border: 'border-radius: 12px', enabled: true, font: '', font_size: 18, foreground: 'theme:White', icon: 'fa:arrow-circle-right', icon_align: right, italic: false, role: null, spacing_above: small, spacing_below: small, text: Submit, tooltip: '', underline: false, visible: true}
     type: Button
   - layout_properties: {grid_position: 'PEVZOB,HTXBYT'}
     name: spacer_3

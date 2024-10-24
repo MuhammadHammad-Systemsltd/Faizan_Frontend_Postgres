@@ -5,13 +5,31 @@ components:
       name: headline_2
       properties: {bold: true, role: headline, text: Please fill out the fields}
       type: Label
-    - layout_properties: {grid_position: 'ZOPBHY,DCKXJP'}
+    - layout_properties: {full_width_row: false, grid_position: 'NMMGOY,CKYHRD'}
+      name: label_2
+      properties: {bold: true, font_size: 16, text: 'Client Name:'}
+      type: Label
+    - event_bindings: {pressed_enter: Clientname_text_pressed_enter}
+      layout_properties: {grid_position: 'NMMGOY,GCMTNV'}
+      name: Clientname_text
+      properties: {align: left, placeholder: Client Name}
+      type: TextBox
+    - layout_properties: {full_width_row: false, grid_position: ',UNXTHX'}
+      name: label_2_copy
+      properties: {bold: true, font_size: 16, text: 'Project Name:'}
+      type: Label
+    - event_bindings: {pressed_enter: ProjectName_text_pressed_enter}
+      layout_properties: {grid_position: ''}
+      name: ProjectName_text
+      properties: {align: left, placeholder: Project Name}
+      type: TextBox
+    - layout_properties: {grid_position: 'YKAJSA,TVDBVN'}
       name: label_1
-      properties: {align: right, font_size: 18, spacing_above: small, spacing_below: none, text: Project Model}
+      properties: {align: right, bold: true, font_size: 16, spacing_above: small, spacing_below: none, text: Project Model}
       type: Label
     - data_bindings: []
       event_bindings: {change: ProjectModel_dropdown_change}
-      layout_properties: {grid_position: 'ZOPBHY,VHMLFS'}
+      layout_properties: {grid_position: 'YKAJSA,AXNDQR'}
       name: ProjectModel_dropdown
       properties:
         align: left
@@ -25,16 +43,6 @@ components:
         spacing_above: small
         spacing_below: none
       type: DropDown
-    - event_bindings: {pressed_enter: Clientname_text_pressed_enter}
-      layout_properties: {grid_position: 'NMMGOY,GCMTNV'}
-      name: Clientname_text
-      properties: {align: left, placeholder: Client Name}
-      type: TextBox
-    - event_bindings: {pressed_enter: ProjectName_text_pressed_enter}
-      layout_properties: {grid_position: ''}
-      name: ProjectName_text
-      properties: {align: left, placeholder: Project Name}
-      type: TextBox
     - event_bindings: {click: IntroNext_btn_click}
       layout_properties: {grid_position: 'XOVEVJ,CABJKG'}
       name: IntroNext_btn
@@ -42,7 +50,7 @@ components:
       type: Button
     layout_properties: {grid_position: 'LXQIQT,VAALGB'}
     name: card_1
-    properties: {col_widths: '{"DCKXJP":30,"VHMLFS":30}', role: card, wrap_on: never}
+    properties: {col_widths: '{"CKYHRD":10,"GCMTNV":50,"UNXTHX":10,"undefined":50,"TVDBVN":30,"AXNDQR":30}', role: card, wrap_on: never}
     type: ColumnPanel
   layout_properties: {slot: default}
   name: content_panel

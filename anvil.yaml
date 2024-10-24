@@ -87,13 +87,10 @@ db_schema:
     server: none
     title: Users
 dependencies:
-- dep_id: dep_l9dwwpg5lrfzw
-  resolution_hints: {app_id: TVV7EFHSOTSLKUZP, name: Clone of Slider Example, package_name: SliderDemo}
-  version: {branch: master}
 - dep_id: dep_6otapkm9wzjow
   resolution_hints: {app_id: LX3VYGPZUQ4OPCAQ, name: Clone of Slider Component, package_name: SliderDemo}
   version: {branch: master}
-metadata: {description: This is a prototype Frontend built with Anvil, logo_img: '', title: Frontend}
+metadata: {description: Resource Automation to Calculate the range of resources required for Cloud Infra, logo_img: '', title: Resource Automation}
 name: Faizan's Frontend
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">'}
 package_name: Faizan_Frontend

@@ -50,7 +50,7 @@ components:
     type: Label
   layout_properties: {grid_position: 'CZSYAD,IRLMVS'}
   name: card_2
-  properties: {role: card}
+  properties: {role: card, wrap_on: never}
   type: ColumnPanel
 - components:
   - layout_properties: {grid_position: 'PRQBMX,DMXHYB'}
@@ -84,7 +84,7 @@ components:
     type: Label
   layout_properties: {grid_position: 'EPYVOK,VPNQMU'}
   name: card_3
-  properties: {role: card}
+  properties: {role: card, wrap_on: never}
   type: ColumnPanel
 - components:
   - layout_properties: {grid_position: ''}
@@ -120,7 +120,7 @@ components:
     type: Label
   layout_properties: {grid_position: 'IMMWVN,TUDFQY'}
   name: card_4
-  properties: {role: card}
+  properties: {role: card, wrap_on: never}
   type: ColumnPanel
 - components:
   - layout_properties: {grid_position: 'UWWFIP,HXUPGG'}
@@ -149,7 +149,7 @@ components:
     type: Label
   layout_properties: {grid_position: 'FZXUXV,SGQBKH'}
   name: card_5
-  properties: {role: card}
+  properties: {role: card, wrap_on: never}
   type: ColumnPanel
 - components:
   - layout_properties: {grid_position: 'WXLRNF,QRWPCE'}
@@ -226,31 +226,36 @@ components:
     name: Label_Display_resourcereq
     properties: {align: center, bold: true, font_size: 18, foreground: 'theme:Black', italic: false, underline: false}
     type: Label
-  - data_bindings: []
-    event_bindings: {click: BackButton_click}
-    layout_properties: {full_width_row: true, grid_position: 'GBBVRD,MEZEGC'}
-    name: BackButton
-    properties: {align: center, background: 'theme:Primary 500', bold: true, border: '', font_size: 18, foreground: 'theme:White', icon: 'fa:arrow-circle-left', text: BACK}
-    type: Button
-  - data_bindings: []
-    event_bindings: {click: submit_button_click}
-    layout_properties: {full_width_row: true, grid_position: 'GBBVRD,XZBFQB'}
-    name: submit_button
-    properties: {align: center, background: 'theme:Primary 500', bold: true, border: 'border-radius: 12px', enabled: true, font: '', font_size: 18, foreground: 'theme:White', icon: 'fa:arrow-circle-right', icon_align: right, italic: false, role: null, spacing_above: small, spacing_below: small, text: Submit, tooltip: '', underline: false, visible: true}
-    type: Button
-  - layout_properties: {grid_position: 'IWQEVF,WLITDY'}
+  layout_properties: {grid_position: 'NCNLIC,NHGGZC'}
+  name: card_6
+  properties: {col_spacing: medium, col_widths: '{}', role: card, wrap_on: never}
+  type: ColumnPanel
+- components:
+  - components:
+    - data_bindings: []
+      event_bindings: {click: BackButton_click}
+      layout_properties: {grid_position: 'VWIEBS,SWHZDM'}
+      name: BackButton
+      properties: {align: left, background: 'theme:Primary 500', bold: true, border: '', font_size: 18, foreground: 'theme:White', icon: 'fa:arrow-circle-left', text: BACK}
+      type: Button
+    - data_bindings: []
+      event_bindings: {click: submit_button_click}
+      layout_properties: {grid_position: 'VWIEBS,OULQWP'}
+      name: submit_button
+      properties: {align: right, background: 'theme:Primary 500', bold: true, border: 'border-radius: 12px', enabled: true, font: '', font_size: 18, foreground: 'theme:White', icon: 'fa:arrow-circle-right', icon_align: right, italic: false, role: null, spacing_above: small, spacing_below: small, text: Submit, tooltip: '', underline: false, visible: true}
+      type: Button
+    layout_properties: {grid_position: 'FPTAKN,CSOLDW'}
+    name: card_7
+    properties: {role: card, wrap_on: never}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'VRZTUE,XVNFKZ'}
     name: spacer_3
     properties: {height: 32}
     type: Spacer
-  - layout_properties: {grid_position: 'TYSVLD,AHXAHU'}
+  - layout_properties: {grid_position: 'SYLUTP,ZZXAYX'}
     name: label_4
     properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: 'theme:Gray 900', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '@ Systems LTD. All rights reserved.', tooltip: '', underline: false, visible: true}
     type: Label
-  layout_properties: {grid_position: 'NCNLIC,NHGGZC'}
-  name: card_6
-  properties: {col_spacing: medium, col_widths: '{}', role: card}
-  type: ColumnPanel
-- components: []
   layout_properties: {grid_position: 'RXJHHL,TEUEMC'}
   name: content_panel
   properties: {background: '', border: '', col_spacing: none, col_widths: '{}', foreground: 'theme:White', role: null, spacing_above: none, spacing_below: none, tooltip: '', visible: true, wrap_on: mobile}
