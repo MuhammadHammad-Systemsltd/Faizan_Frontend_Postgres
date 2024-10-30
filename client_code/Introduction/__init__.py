@@ -8,6 +8,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from ..Survey import Survey
+from ..Landing_Page import Landing_Page
 
 User_details = None
 class Introduction(IntroductionTemplate):
@@ -29,7 +30,11 @@ class Introduction(IntroductionTemplate):
       alert("Please fill out all the fields!")
       
     print(f"This are the values Project Model: {model}\nClient Name: {client}\nProject Name {project}")
-
+  def Home_link_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    self.content_panel.clear()
+    open_form('Landing_Page')
+    
   def ProjectName_text_pressed_enter(self, **event_args):
     global User_details
     """This method is called when the button is clicked"""

@@ -8,12 +8,13 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from ..Survey import Survey
-from ..Introduction import Introduction
 
 class Landing_Page(Landing_PageTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings
+    
     self.init_components(**properties)
+    self.Home_link.visible = True
     if anvil.server.call('check_admin'):
       self.login_link.visible = False
       self.logout_link.visible = True
@@ -28,15 +29,8 @@ class Landing_Page(Landing_PageTemplate):
 
   def login_link_click(self, **event_args):
     """This method is called when the link is clicked"""
-    anvil.users.login_with_form()
-    open_form('Download_page')
-
-  def Home_link_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    self.content_panel.clear()
-    self.content_panel.add_component(Introduction(), full_width_row=True)
-    self.back_link.visible = False
-    self.report_link.visible = True
+    if anvil.users.login_with_form(remember_by_default=False, allow_cancel=True, show_signup_option=True):
+      open_form('Download_page')
 
   def logout_link_click(self, **event_args):
     """This method is called when the link is clicked"""

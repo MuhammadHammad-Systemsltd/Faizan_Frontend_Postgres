@@ -7,6 +7,7 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+from ..Landing_Page import Landing_Page
 
 
 class Download_page(Download_pageTemplate):
@@ -20,3 +21,8 @@ class Download_page(Download_pageTemplate):
     """This method is called when the button is clicked"""
     csv_file = app_tables.serversidedata.search().to_csv()
     anvil.media.download(csv_file)
+
+  def Home_btn_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    self.content_panel.clear()
+    open_form("Landing_Page")

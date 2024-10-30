@@ -9,15 +9,21 @@ import anvil.server
 
 @anvil.server.callable
 def check_admin():
-  if anvil.users.get_user() == "hammad@hammad.asd":
-      # print(anvil.users.get_user())
-      return True
+  if anvil.users.get_user():
+    # print(anvil.users.get_user())
+    return True
 
+@anvil.server.callable
+def login():
+  # open login form
+  anvil.users.login_with_form()
+  
 @anvil.server.callable
 @anvil.tables.in_transaction
 def save(Values):
   print("called Server success")
   app_tables.serversidedata.add_row(ProjectModel=Values[0], Username=Values[1], ProjectName=Values[2])
+  
 @anvil.server.callable
 def get_total_responses():
   return len(app_tables.responses.search())
