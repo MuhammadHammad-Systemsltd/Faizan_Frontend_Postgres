@@ -12,14 +12,14 @@ from ..Introduction import Introduction
 
 class Landing_Page(Landing_PageTemplate):
   def __init__(self, **properties):
-    # Set Form properties and Data Bindings.
+    # Set Form properties and Data Bindings
     self.init_components(**properties)
-    
-    print("Ran")
     if anvil.server.call('check_admin'):
-      print("Ran")
       self.login_link.visible = False
       self.logout_link.visible = True
+    else:
+      self.login_link.visible = True
+      self.logout_link.visible = False
   
   def GetStarted_button_click(self, **event_args):
     """This method is called when the Button is Pressed"""
