@@ -15,7 +15,9 @@ class Landing_Page(Landing_PageTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     
+    print("Ran")
     if anvil.server.call('check_admin'):
+      print("Ran")
       self.login_link.visible = False
       self.logout_link.visible = True
   
@@ -40,9 +42,13 @@ class Landing_Page(Landing_PageTemplate):
     """This method is called when the link is clicked"""
     anvil.users.logout()
     self.content_panel.clear()
-    self.content_panel.add_component(Introduction(), full_width_row=True)
+    open_form('Landing_Page')
     self.logout_link.visible = False
     self.login_link.visible = True
+
+  def logout_link_hide(self, **event_args):
+    """This method is called when the Link is removed from the screen"""
+    pass
 
 
 
