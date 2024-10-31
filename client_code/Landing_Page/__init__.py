@@ -41,8 +41,7 @@ class Landing_Page(Landing_PageTemplate):
 
   def signup_link_click(self, **event_args):
     """This method is called when the button is clicked"""
-    anvil.users.signup_with_email()
-    anvil.users.si
+    anvil.users.signup_with_form(allow_cancel=True)
 
 
 
