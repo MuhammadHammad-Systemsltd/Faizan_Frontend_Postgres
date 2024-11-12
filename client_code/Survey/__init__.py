@@ -63,7 +63,7 @@ class Survey(SurveyTemplate):
     print(random.randint(1, 10000))
     Values = client_details + [coverage, location, project_client, support_lvl, technology, environment,
              existing, ticketing, reporting_lvl, SLA, monitoring_tool, voice_sup, 
-             medium, no_portals, ticket_count, feedback]
+             medium, no_portals, ticket_count, feedback, 0, ""]
     TotalResource = 0
     if Values[0] == 'Shared':
         TotalResource += 1
@@ -160,7 +160,7 @@ class Survey(SurveyTemplate):
         TotalResource += 1
     else:
         TotalResource += 0
-    Values.append(str(TotalResource))
+    Values[19] = TotalResource
     if None not in Values:
       # anvil.server.call('add_responses', age, frequency, methods, rating, comments)
       alert("Thank you for submitting the form!\nWe will get back to you shortly!")

@@ -22,7 +22,17 @@ def login():
 @anvil.tables.in_transaction
 def save(Values):
   print("called Server success")
-  app_tables.serversidedata.add_row(ProjectModel=Values[0], Username=Values[1], ProjectName=Values[2])
+  app_tables.serversidedata.add_row(ProjectModel=Values[0], Username=Values[1],
+                                    ProjectName=Values[2], ProjCov=Values[3],
+                                    ProjectLocation=Values[4], ProjectClient=Values[5],
+                                    ProjectSupportLvl=Values[6], ProjectTechnology=Values[7],
+                                    ProjEnv=Values[8], ProjExist=Values[9],
+                                    ProjTicketing=Values[10], ProjectRep=Values[11],
+                                    ProjVoiceSup=Values[12], ProjSLA=Values[13], 
+                                    ProjMon=Values[14], ProjTicketCnt=Values[15],
+                                    ProjSupMed=Values[16], ProjnoPortals=Values[17], 
+                                    Feedback=Values[18], ResourceNo=Values[19],
+                                   ResourceMsg=Values[20])
   
 @anvil.server.callable
 def get_total_responses():

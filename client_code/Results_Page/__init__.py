@@ -17,20 +17,22 @@ class Results_Page(Results_PageTemplate):
     self.Values = Values
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.Label_ProjModel.text, self.Label_Username.text, self.Label_ProjName.text = Values[0], Values[1], Values[2]
-    self.Label_ProjCov.text, self.Label_ProjLoc.text = Values[3], Values[4]
-    self.Label_ProjClient.text, self.Label_SupLvl.text  = Values[5], Values[6]
-    self.Label_ProjTech.text,  self.Label_ProjEnv.text = Values[7], Values[8]
-    self.Label_ProjExist.text, self.Label_ProjTick.text = Values[9], Values[10]
-    self.label_ProjRep.text, self.label_VoiceSup.text = Values[11], Values[12]
-    self.label_ProjSLA.text, self.label_ProjMon.text = Values[13], Values[14]
-    self.label_ProjTickCnt.text, self.label_ProjSupMed.text = Values[15], Values[16]
-    self.label_ProjnoPortals.text, self.Feedback.text = Values[17], Values[18]
+    self.Label_ProjModel.text, self.Label_Username.text, self.Label_ProjName.text = self.Values[0], self.Values[1], self.Values[2]
+    self.Label_ProjCov.text, self.Label_ProjLoc.text = self.Values[3], self.Values[4]
+    self.Label_ProjClient.text, self.Label_SupLvl.text  = self.Values[5], self.Values[6]
+    self.Label_ProjTech.text,  self.Label_ProjEnv.text = self.Values[7], self.Values[8]
+    self.Label_ProjExist.text, self.Label_ProjTick.text = self.Values[9], self.Values[10]
+    self.label_ProjRep.text, self.label_VoiceSup.text = self.Values[11], self.Values[12]
+    self.label_ProjSLA.text, self.label_ProjMon.text = self.Values[13], self.Values[14]
+    self.label_ProjTickCnt.text, self.label_ProjSupMed.text = self.Values[15], self.Values[16]
+    self.label_ProjnoPortals.text, self.Feedback.text = self.Values[17], self.Values[18]
 
     if int(Values[19]) >= 25:
         self.Label_Display_resourcereq.text = "Number of resources required for the project are Minimum 4 or Maximum 5"
+        self.Values[20] = "Number of resources required for the project are Minimum 4 or Maximum 5"
     else:
         self.Label_Display_resourcereq.text = "Number of resources required for the project are Minimum 1 or Maximum 2"
+        self.Values[20] = "Number of resources required for the project are Minimum 1 or Maximum 2"
     
   # self.slider_label.text = self.slider_levels[self.Reporting_slider.level]
 
@@ -43,7 +45,6 @@ class Results_Page(Results_PageTemplate):
     print(self.Values)
     if None not in self.Values:
       anvil.server.call('save', self.Values)
-      app_tables.serversidedata.add_row(ProjectModel=self.Values[0], Username=self.Values[1], ProjectName=self.Values[2], ProjCov=self.Values[3], ProjectLocation=self.Values[4], ProjectClient=self.Values[5], ProjectSupportLvl=self.Values[6], ProjectTechnology=self.Values[7], ProjEnv=self.Values[8], ProjExist=self.Values[9], ProjTicketing=self.Values[10], ProjectRep=self.Values[11], ProjVoiceSup=self.Values[12], ProjSLA=self.Values[13], ProjMon=self.Values[14], ProjTicketCnt=self.Values[15], ProjSupMed=self.Values[16], ProjnoPortals=self.Values[17], Feedback=self.Values[18])
       alert("Thank you for submitting the form!\nWe will get back to you shortly!")
       self.content_panel.clear()
       open_form('Success')
